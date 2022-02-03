@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #202225;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.wrapper {
+  @apply container bg-[#04111d] px-[1.2rem] py-[0.2rem] md:flex items-center mx-auto  max-w-none text-center;
+}
+
+.logoContainer {
+  @apply md:flex items-center cursor-pointer;
+}
+
+.logoText {
+  @apply ml-[0.8rem] text-white font-semibold text-2xl mx-auto;
+}
+
+.searchBar {
+  @apply items-center bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] mx-auto text-center;
+}
+
+.searchIcon {
+  @apply text-[#8a939b] mx-3 font-bold text-lg;
+}
+
+.searchInput {
+  @apply h-[2.6rem] w-full border-0 bg-transparent outline-0 ring-0 px-2 pl-0 text-[#e6e8eb] placeholder:text-[#8a939b];
+}
+
+.headerItems {
+  @apply md:flex items-center justify-end;
+}
+
+.headerItem {
+  @apply text-white px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer;
+}
+
+.headerIcon {
+  @apply text-[#8a939b] text-3xl font-black px-4 hover:text-white cursor-pointer;
+}
+
+/* HERO */
+
+.heroWrapper {
+  @apply relative flex items-center justify-center
+}
+
+.bgContainer {
+  @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur;
+}
+
+.contentWrapper {
+  @apply flex h-screen relative justify-center flex-wrap items-center mx-auto 
+}
+
+.copyContainer {
+  @apply w-1/2;
+}
+
+.title {
+  @apply relative text-white text-[46px] font-semibold
+}
+/*  
+.description {
+    @apply text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]
+} 
+*/
+.ctaContainer {
+  @apply flex;
+}
+
+.accentedButton {
+  @apply relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer;
+}
+
+.button {
+  @apply relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer;
+}
+
+.cardContainer {
+  @apply rounded-[3rem] m-[1rem];
+}
+
+.infoContainer {
+  @apply h-20 bg-[#313338] p-4 rounded-b-lg flex items-center text-white;
+}
+
+.author {
+  @apply flex flex-col justify-center ml-4;
+}
+/*  
+.name {
+    @apply ``
+}
+*/
+/*  
+.infoIcon {
+    @apply flex justify-end items-center flex-1 text-[#8a939b] text-3xl font-bold
+}
+*/
