@@ -2,14 +2,17 @@ module.exports = {
   content: [
     './public/**/*.{html,js}',
   ],
+  darkMode: false,
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
     extend: {},
+    container: {
+      center: true,
+      screens: {
+        lg: '1024px',
+        xl: '1280px',
+        "2xl": "1536px",
+      },
+    },
   },
   plugins: [],
 }

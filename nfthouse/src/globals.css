@@ -7,6 +7,7 @@ body {
   background-color: #202225;
   padding: 0;
   margin: 0;
+  max-height: 100%;
 }
 
 a {
@@ -18,10 +19,12 @@ a {
   box-sizing: border-box;
 }
 
+/* INDEX */
+
 /* NAVBAR */
 
 .wrapper {
-  @apply bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between lg:justify-start items-center 
+  @apply bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between items-center
 }
 
 .logoContainer {
@@ -34,7 +37,7 @@ a {
 }
 */
 .searchBar {
-  @apply bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center lg:flex md:hidden sm:hidden  mx-auto
+  @apply hidden sm:flex bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center 
 }
 
 .searchIcon {
@@ -46,7 +49,7 @@ a {
 }
 
 .headerItems {
-  @apply lg:flex md:hidden sm:hidden items-center;
+  @apply hidden sm:flex justify-end items-center
 }
 
 .headerItem {
@@ -68,43 +71,58 @@ a {
 /* HERO */
 
 .heroWrapper {
-  @apply relative items-center justify-center 
+  @apply relative
 }
 
 .bgContainer {
-  @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur 
+  @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur
 }
 
+
 .contentWrapper {
-  @apply flex h-screen relative justify-center flex-wrap items-center mx-auto 
+  @apply flex h-screen relative justify-center flex-wrap items-center
 }
+
+/*
+.contentWrapper {
+  @apply container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28 relative
+}
+*/
 
 .copyContainer {
   @apply w-1/2 
 }
 
+/*
+.copyContainer {
+  @apply flex flex-1 flex-col items-center lg:items-start 
+}
+*/
+/*
 .title {
   @apply relative text-white text-[46px] font-semibold
 }
+*/
+
 /*  
 .description {
     @apply text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]
 } 
 */
 .ctaContainer {
-  @apply flex
+  @apply flex 
 }
 
 .accentedButton {
-  @apply relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer;
+  @apply relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer mb-3;
 }
 
 .button {
-  @apply relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer;
+  @apply relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer mb-3;
 }
 
 .cardContainer {
-  @apply rounded-[3rem] m-[1rem];
+  @apply rounded-[3rem]
 }
 
 .infoContainer {
@@ -126,7 +144,7 @@ a {
 */
 
 .footerContainer {
-  @apply bg-[#04111d] py-[0.2rem] max-w-none relative items-center justify-center
+  @apply bg-[#04111d] py-[0.2rem] items-center justify-center w-full relative
 }
 
 .social {
@@ -148,3 +166,82 @@ a {
 .copyright {
   @apply text-[#8a939b] text-center block mb-[0.4rem]
 }
+
+/* COLLECTIONS */
+
+.bannerImageContainer {
+  @apply h-[20vh] w-screen overflow-hidden flex justify-center items-center
+} 
+
+.bannerImage {
+  @apply w-full object-cover
+}
+
+.infoContainer {
+  @apply w-screen px-4
+}
+
+.midRow {
+  @apply w-full flex justify-center text-white
+}
+
+.endRow {
+  @apply w-full flex justify-end text-white
+}
+
+.profileImg {
+  @apply w-40 h-40 object-cover rounded-full border-2 border-[#202225] mt-[-4rem]
+}
+
+.socialIconsContainer {
+  @apply flex text-3xl mb-[-2rem]
+}
+
+.socialIconsWrapper {
+  @apply w-44
+}
+
+.socialIconsContent {
+  @apply flex container justify-between text-[1.4rem] border-2 rounded-lg px-2
+}
+
+.socialIcon {
+  @apply my-2
+}
+
+.divider {
+  @apply border-r-2
+} 
+
+.title {
+  @apply text-5xl font-bold mb-4
+}
+
+.createdBy {
+  @apply text-lg mb-4
+}
+
+.statsContainer {
+  @apply w-[44vw] flex justify-between py-4 border border-[#151b22] rounded-xl mb-4
+}
+
+.collectionStat {
+  @apply w-1/4
+}
+
+.statValue {
+  @apply text-3xl font-bold w-full flex items-center justify-center
+}
+
+.ethLogo {
+  @apply h-6 mr-2
+}
+
+.statName {
+  @apply text-lg w-full text-center mt-1
+}
+
+.description {
+  @apply text-[#8a939b] text-xl w-max-1/4 flex-wrap mt-4
+} 
+
