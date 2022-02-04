@@ -21,19 +21,20 @@ a {
 /* NAVBAR */
 
 .wrapper {
-  @apply container bg-[#04111d] px-[1.2rem] py-[0.2rem] md:flex items-center mx-auto  max-w-none text-center;
+  @apply bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between lg:justify-start items-center 
 }
 
 .logoContainer {
-  @apply md:flex items-center cursor-pointer;
+  @apply mr-3 
 }
 
+/*
 .logoText {
   @apply ml-[0.8rem] text-white font-semibold text-2xl mx-auto;
 }
-
+*/
 .searchBar {
-  @apply items-center bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] mx-auto text-center;
+  @apply bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center lg:flex md:hidden sm:hidden  mx-auto
 }
 
 .searchIcon {
@@ -45,25 +46,33 @@ a {
 }
 
 .headerItems {
-  @apply md:flex items-center justify-end;
+  @apply lg:flex md:hidden sm:hidden items-center;
 }
 
 .headerItem {
-  @apply text-white px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer;
+  @apply text-white px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer 
 }
 
 .headerIcon {
   @apply text-[#8a939b] text-3xl font-black px-4 hover:text-white cursor-pointer;
 }
+/*
+.mobileMenu {
+  @apply hidden md:flex items-center space-x-1
+}
 
+.mobileItems {
+  @apply hidden py-2 px-4
+}
+*/
 /* HERO */
 
 .heroWrapper {
-  @apply relative flex items-center justify-center
+  @apply relative items-center justify-center 
 }
 
 .bgContainer {
-  @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur;
+  @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur 
 }
 
 .contentWrapper {
@@ -71,7 +80,7 @@ a {
 }
 
 .copyContainer {
-  @apply w-1/2;
+  @apply w-1/2 
 }
 
 .title {
@@ -83,7 +92,7 @@ a {
 } 
 */
 .ctaContainer {
-  @apply flex;
+  @apply flex
 }
 
 .accentedButton {
@@ -115,3 +124,27 @@ a {
     @apply flex justify-end items-center flex-1 text-[#8a939b] text-3xl font-bold
 }
 */
+
+.footerContainer {
+  @apply bg-[#04111d] py-[0.2rem] max-w-none relative items-center justify-center
+}
+
+.social {
+  @apply items-center px-[1.2rem] pt-[0.4rem] text-center block 
+}
+
+.socialItem {
+  @apply  text-white hover:text-[#42a0ff] cursor-pointer px-[1.2rem]
+}
+
+.list {
+  @apply flex py-[0.4rem] text-center justify-center 
+}
+
+.listItem {
+  @apply  text-white hover:text-[#42a0ff] cursor-pointer px-[1.2rem]
+}
+
+.copyright {
+  @apply text-[#8a939b] text-center block mb-[0.4rem]
+}

@@ -10,35 +10,34 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-    <script
-      src="https://kit.fontawesome.com/da4b7a64f8.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/da4b7a64f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <a href="index.html" class="logoContainer">
-            <img src="../assets/nftHouse-logo-2.png" height="200" width="200" alt="">
-            <!--<div class="logoText">NftHouse</div>-->
-        </a>
-        <div class="searchBar flex flex-1">
-            <div class="searchIcon">
-                <a href="#"><i class="fas fa-search"></i></a>
+    <div class="mx-auto">
+        <nav class="wrapper">
+            <div class="logoContainer">
+                <a href="index.html"><img src="../assets/nftHouse-logo-2.png" width="200" alt=""></a>
+                <!--<div class="logoText">NftHouse</div>-->
             </div>
-            <input class=searchInput placeholder="Search items, collections and accounts">
-        </div>
-        <ul class="headerItems">
-            <li><a href="collections.html" class="headerItem">Collections</a></li>
-            <li><a href="" class="headerItem">Stats</a></li>
-            <li><a href="" class="headerItem">Resources</a></li>
-            <li><a href="" class="headerItem">Create</a></li>
-            <div class="headerIcon">
-                <a href="#"><i class="far fa-user-circle"></i></a>
+            <div class="searchBar flex flex-1">
+                <div class="searchIcon">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <input class=searchInput placeholder="Search items, collections and accounts">
             </div>
-            <div class="headerIcon">
-                <a href="#"><i class="fas fa-wallet"></i></a>
-            </div>
-        </ul>
+            <ul class="headerItems">
+                <li><a href="collections.html" class="headerItem">Collections</a></li>
+                <li><a href="" class="headerItem">Stats</a></li>
+                <li><a href="" class="headerItem">Resources</a></li>
+                <li><a href="" class="headerItem">Create</a></li>
+                <div class="headerIcon">
+                    <a href="#"><i class="far fa-user-circle"></i></a>
+                </div>
+                <div class="headerIcon">
+                    <a href="#"><i class="fas fa-wallet"></i></a>
+                </div>
+            </ul>
+        </nav>
     </div>
 
     <div class="heroWrapper">
@@ -69,6 +68,42 @@
             </div>
         </div>
     </div>
+
+    
+    <div class="footerContainer">
+        <div class="social">
+            <a class="socialItem" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="socialItem" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="socialItem" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="socialItem" href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    
+        <ul class="list">
+            <li>
+                <a class="listItem" href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a class="listItem" href="#">About</a>
+            </li>
+            <li>
+                <a class="listItem" href="#">Terms of Service</a>
+            </li>
+            <li>
+                <a class="listItem" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <p class="copyright">NftHouse <span>&copy;</span> 2022.</p>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button.mobile-menu-button');
+        const menu = document.querySelector('.mobileItems');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+   
     
 </body>
 </html>

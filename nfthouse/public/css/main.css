@@ -428,6 +428,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.8rem;
   margin-right: 0.8rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mt-\[0\.8rem\] {
   margin-top: 0.8rem;
 }
@@ -436,6 +440,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
 }
 .h-\[2\.25rem\] {
   height: 2.25rem;
@@ -482,81 +489,33 @@ a {
 /* NAVBAR */
 
 .wrapper {
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-
-  .wrapper {
-    max-width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .wrapper {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 976px) {
-
-  .wrapper {
-    max-width: 976px;
-  }
-}
-
-@media (min-width: 1440px) {
-
-  .wrapper {
-    max-width: 1440px;
-  }
-}
-
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: none;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(4 17 29 / var(--tw-bg-opacity));
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 976px) {
 
   .wrapper {
-    display: flex;
+    justify-content: flex-start;
   }
 }
 
 .logoContainer {
-  cursor: pointer;
-  align-items: center;
+  margin-right: 0.75rem;
 }
 
-@media (min-width: 768px) {
-
-  .logoContainer {
-    display: flex;
-  }
-}
-
+/*
 .logoText {
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 0.8rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  @apply ml-[0.8rem] text-white font-semibold text-2xl mx-auto;
 }
-
+*/
 .searchBar {
   margin-left: auto;
   margin-right: auto;
@@ -566,10 +525,27 @@ a {
   background-color: rgb(54 56 64 / var(--tw-bg-opacity));
   text-align: center;
 }
-
 .searchBar:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(76 80 92 / var(--tw-bg-opacity));
+}
+@media (min-width: 480px) {
+
+  .searchBar {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+
+  .searchBar {
+    display: none;
+  }
+}
+@media (min-width: 976px) {
+
+  .searchBar {
+    display: flex;
+  }
 }
 
 .searchIcon {
@@ -615,10 +591,23 @@ a {
 
 .headerItems {
   align-items: center;
-  justify-content: flex-end;
+}
+
+@media (min-width: 480px) {
+
+  .headerItems {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
+
+  .headerItems {
+    display: none;
+  }
+}
+
+@media (min-width: 976px) {
 
   .headerItems {
     display: flex;
@@ -655,12 +644,19 @@ a {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+/*
+.mobileMenu {
+  @apply hidden md:flex items-center space-x-1
+}
 
+.mobileItems {
+  @apply hidden py-2 px-4
+}
+*/
 /* HERO */
 
 .heroWrapper {
   position: relative;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -794,3 +790,65 @@ a {
     @apply flex justify-end items-center flex-1 text-[#8a939b] text-3xl font-bold
 }
 */
+
+.footerContainer {
+  position: relative;
+  max-width: none;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 17 29 / var(--tw-bg-opacity));
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.social {
+  display: block;
+  align-items: center;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 0.4rem;
+  text-align: center;
+}
+
+.socialItem {
+  cursor: pointer;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.socialItem:hover {
+  --tw-text-opacity: 1;
+  color: rgb(66 160 255 / var(--tw-text-opacity));
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
+
+.listItem {
+  cursor: pointer;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.listItem:hover {
+  --tw-text-opacity: 1;
+  color: rgb(66 160 255 / var(--tw-text-opacity));
+}
+
+.copyright {
+  margin-bottom: 0.4rem;
+  display: block;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(138 147 155 / var(--tw-text-opacity));
+}
