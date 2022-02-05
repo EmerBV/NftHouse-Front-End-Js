@@ -177,7 +177,7 @@ a {
   @apply w-full object-cover
 }
 
-.infoContainer {
+.collectionInfoContainer {
   @apply w-screen px-4
 }
 
@@ -198,7 +198,7 @@ a {
 }
 
 .socialIconsWrapper {
-  @apply w-44
+  @apply w-44 
 }
 
 .socialIconsContent {
@@ -213,7 +213,7 @@ a {
   @apply border-r-2
 } 
 
-.title {
+.collectionTitle {
   @apply text-5xl font-bold mb-4
 }
 
@@ -222,7 +222,7 @@ a {
 }
 
 .statsContainer {
-  @apply w-[44vw] flex justify-between py-4 border border-[#151b22] rounded-xl mb-4
+  @apply w-[44vw] flex justify-between py-4 border border-[#151b22] rounded-xl mb-4 items-center
 }
 
 .collectionStat {
@@ -241,7 +241,6 @@ a {
   @apply text-lg w-full text-center mt-1
 }
 
-.description {
-  @apply text-[#8a939b] text-xl w-max-1/4 flex-wrap mt-4
-} 
+
+
 
