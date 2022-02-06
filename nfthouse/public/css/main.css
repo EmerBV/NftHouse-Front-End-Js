@@ -428,27 +428,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
 
   .container {
-    max-width: 1024px;
+    max-width: 1124px;
   }
 }
-@media (min-width: 1280px) {
-
-  .container {
-    max-width: 1280px;
-  }
+.relative {
+  position: relative;
 }
-@media (min-width: 1536px) {
-
-  .container {
-    max-width: 1536px;
-  }
+.m-0 {
+  margin: 0px;
 }
-.bottom-0 {
-  bottom: 0px;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -459,29 +460,47 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
 .hidden {
   display: none;
 }
+.h-full {
+  height: 100%;
+}
 .h-\[2\.25rem\] {
   height: 2.25rem;
 }
-.w-full {
-  width: 100%;
+.max-h-full {
+  max-height: 100%;
 }
-.max-w-none {
-  max-width: none;
+.max-w-full {
+  max-width: 100%;
 }
 .flex-1 {
   flex: 1 1 0%;
 }
+.grow {
+  flex-grow: 1;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
+.items-center {
+  align-items: center;
+}
 .justify-end {
   justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -495,6 +514,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -531,18 +553,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(24 104 183 / var(--tw-text-opacity));
 }
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 
 html,
 body {
   background-color: #202225;
-  padding: 0;
-  margin: 0;
-  max-height: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -554,7 +575,13 @@ a {
 /* NAVBAR */
 
 .wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 110;
   display: flex;
+  height: 72px;
+  max-width: 100%;
   align-items: center;
   justify-content: space-between;
   --tw-bg-opacity: 1;
@@ -563,6 +590,11 @@ a {
   padding-right: 1.2rem;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+  transition-property: top;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 0.5s;
+  transition-timing-function: 0s;
 }
 
 .logoContainer {
@@ -687,11 +719,11 @@ a {
 }
 */
 /* HERO */
-
+/*
 .heroWrapper {
-  position: relative;
+  @apply relative
 }
-
+*/
 .bgContainer::before {
   position: absolute;
   top: 0px;
@@ -709,25 +741,70 @@ a {
   --tw-content: '';
   content: var(--tw-content);
 }
-
+/*
+.contentWrapper {
+  @apply flex flex-1 h-screen justify-center items-center md:flex-row mx-4 my-0
+}
+*/
 
 .contentWrapper {
-  position: relative;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   display: flex;
   height: 100vh;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
+}
+
+@media (min-width: 640px) {
+
+  .contentWrapper {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .contentWrapper {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .contentWrapper {
+    margin-top: 1.25rem;
+  }
+
+  .contentWrapper {
+    flex-direction: row;
+  }
 }
 
 /*
 .contentWrapper {
-  @apply container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28 relative
+  @apply space-y-10 md:grid md:grid-cols-2 relative
 }
 */
 
 .copyContainer {
   width: 50%;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+
+  .copyContainer {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .copyContainer {
+    align-items: center;
+  }
 }
 
 /*
@@ -735,11 +812,22 @@ a {
   @apply flex flex-1 flex-col items-center lg:items-start 
 }
 */
+
 /*
-.title {
-  @apply relative text-white text-[46px] font-semibold
+.copyContainer {
+  @apply md:flex md:flex-col md:justify-center 
 }
 */
+
+.title {
+  position: relative;
+  display: flex;
+  font-size: 46px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 
 /*  
 .description {
@@ -799,6 +887,8 @@ a {
 }
 
 .cardContainer {
+  align-items: center;
+  justify-content: center;
   border-radius: 3rem;
 }
 
@@ -834,6 +924,7 @@ a {
 
 .footerContainer {
   position: relative;
+  bottom: 0px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -912,7 +1003,7 @@ a {
 }
 
 .collectionInfoContainer {
-  width: 100vw;
+  width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -960,26 +1051,14 @@ a {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
 
   .socialIconsContent {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-
-  .socialIconsContent {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-
-  .socialIconsContent {
-    max-width: 1536px;
+    max-width: 1124px;
   }
 }
 
@@ -1056,13 +1135,131 @@ a {
   line-height: 1.75rem;
 }
 
+/* NFT CARD */
+
+.nftWrapper {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  height: 22rem;
+  width: 14rem;
+  flex: 1 1 auto;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 51 57 / var(--tw-bg-opacity));
+}
+
+.imgContainer {
+  display: flex;
+  height: 66.666667%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} 
+  
+.nftImg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+} 
+  
+.details {
+  padding: 0.75rem;
+} 
+  
+.info {
+  display: flex;
+  justify-content: space-between;
+  --tw-text-opacity: 1;
+  color: rgb(228 232 235 / var(--tw-text-opacity));
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+} 
+/*  
+.infoLeft {
+  @apply flex-0.6 flex-wrap
+} 
+*/  
+.collectionName {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(138 147 155 / var(--tw-text-opacity));
+} 
+  
+.assetName {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+} 
+/*  
+.infoRight {
+  @apply flex-0.4 text-right
+} 
+*/ 
+.priceTag {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(138 147 155 / var(--tw-text-opacity));
+} 
+  
+.priceValue {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+} 
+  
+.cardEthLogo {
+  margin-right: 0.5rem;
+  height: 1.25rem;
+} 
+  
+.likes {
+  margin-top: 0.75rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(138 147 155 / var(--tw-text-opacity));
+} 
+  
+.likeIcon {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+} 
+  
+.hover\:-translate-y-2:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+} 
+  
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+} 
+  
 @media (min-width: 640px) {
 
   .sm\:hidden {
     display: none;
   }
-}
-
+} 
+  
 @media (min-width: 1024px) {
 
   .lg\:text-left {
@@ -1073,7 +1270,7 @@ a {
     font-size: 3rem;
     line-height: 1;
   }
-}
+} 
 
 
 

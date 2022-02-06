@@ -5,14 +5,6 @@
 html,
 body {
   background-color: #202225;
-  padding: 0;
-  margin: 0;
-  max-height: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -24,7 +16,7 @@ a {
 /* NAVBAR */
 
 .wrapper {
-  @apply bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between items-center
+  @apply max-w-full bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between items-center h-[72px] sticky top-0 z-[110] transition-[top] duration-[0.5s] ease-[0s] 
 }
 
 .logoContainer {
@@ -69,28 +61,32 @@ a {
 }
 */
 /* HERO */
-
+/*
 .heroWrapper {
   @apply relative
 }
-
+*/
 .bgContainer {
   @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur
 }
-
+/*
+.contentWrapper {
+  @apply flex flex-1 h-screen justify-center items-center md:flex-row mx-4 my-0
+}
+*/
 
 .contentWrapper {
-  @apply flex h-screen relative justify-center flex-wrap items-center
+  @apply flex h-screen justify-center items-center lg:flex-row md:flex-row sm:text-center  gap-12 mt-5 lg:mt-5  mb-5 
 }
 
 /*
 .contentWrapper {
-  @apply container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28 relative
+  @apply space-y-10 md:grid md:grid-cols-2 relative
 }
 */
 
 .copyContainer {
-  @apply w-1/2 
+  @apply w-1/2 justify-center md:items-center sm:items-start
 }
 
 /*
@@ -98,11 +94,17 @@ a {
   @apply flex flex-1 flex-col items-center lg:items-start 
 }
 */
+
 /*
-.title {
-  @apply relative text-white text-[46px] font-semibold
+.copyContainer {
+  @apply md:flex md:flex-col md:justify-center 
 }
 */
+
+.title {
+  @apply relative text-white text-[46px] font-semibold flex
+}
+
 
 /*  
 .description {
@@ -122,7 +124,7 @@ a {
 }
 
 .cardContainer {
-  @apply rounded-[3rem]
+  @apply rounded-[3rem] justify-center items-center 
 }
 
 .infoContainer {
@@ -144,7 +146,7 @@ a {
 */
 
 .footerContainer {
-  @apply bg-[#04111d] py-[0.2rem] items-center justify-center w-full relative
+  @apply bg-[#04111d] py-[0.2rem] items-center justify-center bottom-0 w-full relative
 }
 
 .social {
@@ -178,7 +180,7 @@ a {
 }
 
 .collectionInfoContainer {
-  @apply w-screen px-4
+  @apply w-full px-4
 }
 
 .midRow {
@@ -240,6 +242,64 @@ a {
 .statName {
   @apply text-lg w-full text-center mt-1
 }
+
+/* NFT CARD */
+
+.nftWrapper {
+  @apply bg-[#303339] flex-auto w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer
+}
+
+.imgContainer {
+  @apply h-2/3 w-full overflow-hidden flex justify-center items-center
+} 
+  
+.nftImg {
+  @apply w-full object-cover
+} 
+  
+.details {
+  @apply p-3
+} 
+  
+.info {
+  @apply flex justify-between text-[#e4e8eb] drop-shadow-xl
+} 
+/*  
+.infoLeft {
+  @apply flex-0.6 flex-wrap
+} 
+*/  
+.collectionName {
+  @apply font-semibold text-sm text-[#8a939b]
+} 
+  
+.assetName {
+  @apply font-bold text-lg mt-2
+} 
+/*  
+.infoRight {
+  @apply flex-0.4 text-right
+} 
+*/ 
+.priceTag {
+  @apply font-semibold text-sm text-[#8a939b]
+} 
+  
+.priceValue {
+  @apply flex items-center text-xl font-bold mt-2
+} 
+  
+.cardEthLogo {
+  @apply h-5 mr-2
+} 
+  
+.likes {
+  @apply text-[#8a939b] font-bold flex items-center w-full justify-end mt-3
+} 
+  
+.likeIcon {
+  @apply text-xl mr-2
+} 
 
 
 

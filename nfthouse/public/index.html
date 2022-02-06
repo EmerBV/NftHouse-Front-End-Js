@@ -12,9 +12,10 @@
 
     <script src="https://kit.fontawesome.com/da4b7a64f8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container max-w-none">
-        <nav class="wrapper w-full">
+    <div class="max-w-full max-h-full m-0 block justify-center items-center">
+        <nav class="wrapper">
             <div class="logoContainer">
                 <a href="index.html"><img src="../assets/nftHouse-logo-2.png" width="200" alt=""></a>
             </div>
@@ -40,72 +41,71 @@
                 <i class="text-white text-2xl fas fa-bars"></i>
             </div>
         </nav>
-    </div>
-
-    <div class="heroWrapper">
-        <div class="bgContainer">
-            <div class="contentWrapper">
-                <div class="copyContainer">
-                    <div class="title text-white text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-3 font-semibold">
-                        Discover, collect and sell extraordinary NFTs
-                    </div>
-                    <div class="text-[#8a939b] text-lg text-center lg:text-left mb-6">
-                        NftHouse is the world's first and largest NFT marketplace.
-                    </div>
-                    <div class="ctaContainer">
-                        <button class="accentedButton">Explore</button>
-                        <button class="button">Create</button>
-                    </div>
-                </div>
-                <div class="cardContainer">
-                    <img class="rounded-t-lg" src="../assets/card_Img.jpg" alt="">
-                    <div class="infoContainer">
-                        <img class="h-[2.25rem] rounded-full" src="https://pbs.twimg.com/media/FI231MlaIAADj_q?format=jpg&name=small" alt="">
-                        <div class="author">
-                            <div class="name">AzukiZen</div>
-                            <a class="text-[#1868b7]" href="">TeamAzuki</a>
+        
+        <section class="relative container justify-center items-center max-w-full my-2">
+            <div class="heroWrapper max-w-full my-2">
+                <div class="bgContainer max-w-full">
+                    <div class="contentWrapper">
+                        <div class="copyContainer">
+                            <div class="title text-white text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-3 font-semibold">
+                                Discover, collect and sell extraordinary NFTs
+                            </div>
+                            <div class="text-[#8a939b] text-lg text-center lg:text-left mb-6">
+                                NftHouse is the world's first and largest NFT marketplace.
+                            </div>
+                            <div class="ctaContainer">
+                                <button class="accentedButton"><a href="" class="justify-center">Explore</a></button>
+                                <button class="button"><a href="" class="">Create</a></button>
+                            </div>
+                        </div>
+                        <div class="cardContainer hover:shadow-lg transform transition hover:-translate-y-2 mx-2">
+                            <img class="rounded-t-lg h-full" src="../assets/card_Img.jpg" alt="">
+                            <div class="infoContainer">
+                                <img class="h-[2.25rem] rounded-full" src="https://pbs.twimg.com/media/FI231MlaIAADj_q?format=jpg&name=small" alt="">
+                                <div class="author">
+                                    <div class="name">AzukiZen</div>
+                                    <a class="text-[#1868b7]" href="">TeamAzuki</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+       
+        <footer class="footerContainer ">
+            <div class="social">
+                <a class="socialItem" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="socialItem" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="socialItem" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="socialItem" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        
+            <ul class="list">
+                <li>
+                    <a class="listItem" href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a class="listItem" href="#">About</a>
+                </li>
+                <li>
+                    <a class="listItem" href="#">Terms of Service</a>
+                </li>
+                <li>
+                    <a class="listItem" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <p class="copyright">NftHouse <span>&copy;</span> 2022.</p>
+        </footer>
+
+        <script>
+            const btn = document.querySelector('button.mobile-menu-button');
+            const menu = document.querySelector('.mobileItems');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
     </div>
-
-    
-    <div class="footerContainer bottom-0">
-        <div class="social">
-            <a class="socialItem" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="socialItem" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="socialItem" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="socialItem" href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    
-        <ul class="list">
-            <li>
-                <a class="listItem" href="#">Privacy Policy</a>
-            </li>
-            <li>
-                <a class="listItem" href="#">About</a>
-            </li>
-            <li>
-                <a class="listItem" href="#">Terms of Service</a>
-            </li>
-            <li>
-                <a class="listItem" href="#">Contact Us</a>
-            </li>
-        </ul>
-        <p class="copyright">NftHouse <span>&copy;</span> 2022.</p>
-    </div>
-
-    <script>
-        const btn = document.querySelector('button.mobile-menu-button');
-        const menu = document.querySelector('.mobileItems');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
-   
-    
 </body>
 </html>
