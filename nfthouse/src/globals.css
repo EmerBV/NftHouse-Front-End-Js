@@ -16,11 +16,11 @@ body {
 /* NAVBAR */
 
 .wrapper {
-  @apply max-w-full bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between items-center h-[72px] sticky top-0 z-[110] transition-[top] duration-[0.5s] ease-[0s] 
+  @apply max-w-full bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between items-center h-[72px] sticky top-0 z-[110] transition-[top] duration-[0.5s] ease-[0s];
 }
 
 .logoContainer {
-  @apply mr-3 
+  @apply mr-3;
 }
 
 /*
@@ -29,7 +29,7 @@ body {
 }
 */
 .searchBar {
-  @apply hidden sm:flex bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center 
+  @apply hidden sm:flex bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center;
 }
 
 .searchIcon {
@@ -41,11 +41,11 @@ body {
 }
 
 .headerItems {
-  @apply hidden sm:flex justify-end items-center
+  @apply hidden sm:flex justify-end items-center;
 }
 
 .headerItem {
-  @apply text-white px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer 
+  @apply text-white px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer;
 }
 
 .headerIcon {
@@ -67,7 +67,7 @@ body {
 }
 */
 .bgContainer {
-  @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur
+  @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur;
 }
 /*
 .contentWrapper {
@@ -76,7 +76,7 @@ body {
 */
 
 .contentWrapper {
-  @apply flex h-screen justify-center items-center lg:flex-row md:flex-row sm:text-center  gap-12 mt-5 lg:mt-5  mb-5 
+  @apply flex h-screen justify-center items-center lg:flex-row md:flex-row sm:text-center  gap-12 mt-5 lg:mt-5  mb-5;
 }
 
 /*
@@ -86,7 +86,7 @@ body {
 */
 
 .copyContainer {
-  @apply w-1/2 justify-center md:items-center sm:items-start
+  @apply w-1/2 justify-center md:items-center sm:items-start;
 }
 
 /*
@@ -102,9 +102,8 @@ body {
 */
 
 .title {
-  @apply relative text-white text-[46px] font-semibold flex
+  @apply relative text-white text-[46px] font-semibold flex;
 }
-
 
 /*  
 .description {
@@ -112,7 +111,7 @@ body {
 } 
 */
 .ctaContainer {
-  @apply flex 
+  @apply flex;
 }
 
 .accentedButton {
@@ -124,7 +123,7 @@ body {
 }
 
 .cardContainer {
-  @apply rounded-[3rem] justify-center items-center 
+  @apply rounded-[3rem] justify-center items-center;
 }
 
 .infoContainer {
@@ -146,161 +145,311 @@ body {
 */
 
 .footerContainer {
-  @apply bg-[#04111d] py-[0.2rem] items-center justify-center bottom-0 w-full relative
+  @apply bg-[#04111d] py-[0.2rem] items-center justify-center bottom-0 w-full relative;
 }
 
 .social {
-  @apply items-center px-[1.2rem] pt-[0.4rem] text-center block 
+  @apply items-center px-[1.2rem] pt-[0.4rem] text-center block;
 }
 
 .socialItem {
-  @apply  text-white hover:text-[#42a0ff] cursor-pointer px-[1.2rem]
+  @apply text-white hover:text-[#42a0ff] cursor-pointer px-[1.2rem];
 }
 
 .list {
-  @apply flex py-[0.4rem] text-center justify-center 
+  @apply flex py-[0.4rem] text-center justify-center;
 }
 
 .listItem {
-  @apply  text-white hover:text-[#42a0ff] cursor-pointer px-[1.2rem]
+  @apply text-white hover:text-[#42a0ff] cursor-pointer px-[1.2rem];
 }
 
 .copyright {
-  @apply text-[#8a939b] text-center block mb-[0.4rem]
+  @apply text-[#8a939b] text-center block mb-[0.4rem];
 }
 
 /* COLLECTIONS */
 
 .bannerImageContainer {
-  @apply h-[20vh] w-screen overflow-hidden flex justify-center items-center
-} 
+  @apply h-[20vh] w-screen overflow-hidden flex justify-center items-center;
+}
 
 .bannerImage {
-  @apply w-full object-cover
+  @apply w-full object-cover;
 }
 
 .collectionInfoContainer {
-  @apply w-full px-4
+  @apply w-full px-4;
 }
 
 .midRow {
-  @apply w-full flex justify-center text-white
+  @apply w-full flex justify-center text-white;
 }
 
 .endRow {
-  @apply w-full flex justify-end text-white
+  @apply w-full flex justify-end text-white;
 }
 
 .profileImg {
-  @apply w-40 h-40 object-cover rounded-full border-2 border-[#202225] mt-[-4rem]
+  @apply w-40 h-40 object-cover rounded-full border-2 border-[#202225] mt-[-4rem];
 }
 
 .socialIconsContainer {
-  @apply flex text-3xl mb-[-2rem]
+  @apply flex text-3xl mb-[-2rem];
 }
 
 .socialIconsWrapper {
-  @apply w-44 
+  @apply w-44;
 }
 
 .socialIconsContent {
-  @apply flex container justify-between text-[1.4rem] border-2 rounded-lg px-2
+  @apply flex container justify-between text-[1.4rem] border-2 rounded-lg px-2;
 }
 
 .socialIcon {
-  @apply my-2
+  @apply my-2;
 }
 
 .divider {
-  @apply border-r-2
-} 
+  @apply border-r-2;
+}
 
 .collectionTitle {
-  @apply text-5xl font-bold mb-4
+  @apply text-5xl font-bold mb-4;
 }
 
 .createdBy {
-  @apply text-lg mb-4
+  @apply text-lg mb-4;
 }
 
 .statsContainer {
-  @apply w-[44vw] flex justify-between py-4 border border-[#151b22] rounded-xl mb-4 items-center
+  @apply w-[44vw] flex justify-between py-4 border border-[#151b22] rounded-xl mb-4 items-center;
 }
 
 .collectionStat {
-  @apply w-1/4
+  @apply w-1/4;
 }
 
 .statValue {
-  @apply text-3xl font-bold w-full flex items-center justify-center
+  @apply text-3xl font-bold w-full flex items-center justify-center;
 }
 
 .ethLogo {
-  @apply h-6 mr-2
+  @apply h-6 mr-2;
 }
 
 .statName {
-  @apply text-lg w-full text-center mt-1
+  @apply text-lg w-full text-center mt-1;
 }
 
 /* NFT CARD */
 
 .nftWrapper {
-  @apply bg-[#303339] flex-auto w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer
+  @apply bg-[#303339] flex-auto w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer;
 }
 
 .imgContainer {
-  @apply h-2/3 w-full overflow-hidden flex justify-center items-center
-} 
-  
+  @apply h-2/3 w-full overflow-hidden flex justify-center items-center;
+}
+
 .nftImg {
-  @apply w-full object-cover
-} 
-  
+  @apply w-full object-cover;
+}
+
 .details {
-  @apply p-3
-} 
-  
+  @apply p-3;
+}
+
 .info {
-  @apply flex justify-between text-[#e4e8eb] drop-shadow-xl
-} 
+  @apply flex justify-between text-[#e4e8eb] drop-shadow-xl;
+}
 /*  
 .infoLeft {
   @apply flex-0.6 flex-wrap
 } 
-*/  
+*/
 .collectionName {
-  @apply font-semibold text-sm text-[#8a939b]
-} 
-  
+  @apply font-semibold text-sm text-[#8a939b];
+}
+
 .assetName {
-  @apply font-bold text-lg mt-2
-} 
+  @apply font-bold text-lg mt-2;
+}
 /*  
 .infoRight {
   @apply flex-0.4 text-right
 } 
-*/ 
+*/
 .priceTag {
-  @apply font-semibold text-sm text-[#8a939b]
-} 
-  
+  @apply font-semibold text-sm text-[#8a939b];
+}
+
 .priceValue {
-  @apply flex items-center text-xl font-bold mt-2
-} 
-  
+  @apply flex items-center text-xl font-bold mt-2;
+}
+
 .cardEthLogo {
+  @apply h-5 mr-2;
+}
+
+.likes {
+  @apply text-[#8a939b] font-bold flex items-center w-full justify-end mt-3;
+}
+
+.likeIcon {
+  @apply text-xl mr-2;
+}
+
+/* NFT DETAIL */
+/*
+.detailWrapper {
+  @apply flex flex-col items-center container-lg text-[#e5e8eb]
+}
+*/
+.detailContainer {
+  @apply container p-6;
+}
+
+.detailTopContent {
+  @apply flex;
+}
+
+.detailImgContainer {
+  @apply mr-4;
+}
+
+.detailsContainer {
+  @apply flex-[2] ml-4;
+}
+
+.topBar {
+  @apply bg-[#303339] p-2 rounded-t-lg border-[#151c22] border;
+}
+
+.topBarContent {
+  @apply flex items-center;
+}
+
+.likesCounter {
+  @apply flex-1 flex items-center justify-end;
+}
+
+/* GENERAL DETAILS */
+
+.generalWrapper {
+  @apply flex;
+}
+
+.generalInfoContainer {
+  @apply h-36 flex flex-col flex-1 justify-between mb-6;
+}
+
+.accent {
+  @apply text-[#2081e2];
+}
+
+.generalNftTitle {
+  @apply text-3xl font-extrabold;
+}
+
+.otherInfo {
+  @apply flex;
+}
+
+.ownedBy {
+  @apply text-[#8a939b] mr-4;
+}
+
+.generalLikes {
+  @apply flex items-center text-[#8a939b];
+}
+
+.generalLikeIcon {
+  @apply mr-1;
+}
+
+.actionButtonsContainer {
+  @apply w-44;
+}
+
+.generalActionButtons {
+  @apply flex container justify-between text-[1.4rem] border-2 rounded-lg;
+}
+
+.generalActionButton {
+  @apply my-2;
+}
+
+.generalDivider {
+  @apply border-r-2;
+}
+
+/* ITEM ACTIVITY */
+
+.activityWrapper {
+  @apply w-full mt-8 border border-[#151b22] rounded-xl bg-[#303339] overflow-hidden
+}
+
+.activityTitle {
+  @apply bg-[#262b2f] px-6 py-4 flex items-center
+}
+
+.activityTitleLeft {
+  @apply flex-1 flex items-center text-xl font-bold
+}
+
+.activityTitleIcon {
+  @apply text-3xl mr-2
+}
+
+.activityTitleRight {
+  @apply text-xl
+}
+
+.activityFilter {
+  @apply flex items-center border border-[#151b22] mx-4 my-6 px-3 py-4 rounded-xl bg-[#363840]
+}
+
+.filterTitle {
+  @apply flex-1
+}
+
+.tableHeader {
+  @apply flex w-full bg-[#262b2f] border-y border-[#151b22] mt-8 px-4 py-1
+}
+/*
+.eventItem {
+  @apply flex px-4
+}
+
+.activityEthLogo {
+  @apply h-5 mr-2
+}
+*/
+.eventItem {
+  @apply flex px-4 py-5 font-medium
+}
+
+.event {
+  @apply flex items-center
+}
+
+.eventIcon {
+  @apply mr-2 text-xl
+}
+
+.eventName {
+  @apply text-lg font-semibold
+}
+
+.eventPrice {
+  @apply flex items-center
+}
+
+.eventPriceValue {
+  @apply text-lg
+}
+
+.eventEthLogo {
   @apply h-5 mr-2
 } 
-  
-.likes {
-  @apply text-[#8a939b] font-bold flex items-center w-full justify-end mt-3
-} 
-  
-.likeIcon {
-  @apply text-xl mr-2
-} 
-
-
-
-
