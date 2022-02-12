@@ -41,6 +41,8 @@
             <i class="text-white text-2xl fas fa-bars"></i>
         </div>
     </nav>
+
+    <section class="notification hidden relative"></section>
    
     <div class="flex justify-center items-center h-screen bg-[#3b3d42] mx-auto p-[20px]">
         <div class="relative block p-[50px] justify-center items-center w-[600px]">
@@ -48,16 +50,16 @@
                 <h1 class="text-[34px] text-center text-white font-[600] mb-4">Sign Up</h1>
                 <form class="p-[50px] rounded-lg border-[#151c22] border justify-center items-center">
                     <div class="mb-4 ">
-                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="text" placeholder="User name" required>
+                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="text" name="textInput" id="textInput" placeholder="User name" required>
                     </div>
                     <div class="mb-4">
-                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="password" placeholder="Password" required>
+                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="password" name="passwordInput" id="passwordInput" placeholder="Password" required>
                     </div>
                     <div class="mb-2">
-                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="password" placeholder="Password" required>
+                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="password" name="passwordMatchInput" id="passwordMatchInput" placeholder="Repeat the password" required>
                     </div>
                     <div class="flex justify-center items-center">
-                        <button class="border border-[#282b2f] bg-[#2081e2] p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-black w-[250px]" type="submit" disabled>LOGIN</button>
+                        <button class="border border-[#282b2f] bg-[#2081e2] p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-black w-[250px]" type="submit" disabled>CONFIRM</button>
                     </div>
                 </form>
             </div>
@@ -88,6 +90,8 @@
         </ul>
         <p class="copyright">NftHouse <span>&copy;</span> 2022.</p>
     </footer>
+
+    <script type="module" src="../signup/signup.js"></script>
     
 </body>
 </html>

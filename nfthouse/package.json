@@ -16,7 +16,6 @@
     "tailwindcss": "^3.0.18"
   },
   "dependencies": {
-    "express": "^4.17.2",
     "postcss-cli": "^9.1.0",
     "win-node-env": "^0.6.0"
   }

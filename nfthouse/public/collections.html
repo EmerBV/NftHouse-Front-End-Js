@@ -9,12 +9,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/nftHouse.png" />
     
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../shared/spinner/spinner.css" />
+    <!--<link rel="stylesheet" href="./shared/notification/notification.css" />-->
 
     <script src="https://kit.fontawesome.com/da4b7a64f8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
+    <div class="notification hidden relative"></div>
     <nav class="wrapper">
         <div class="logoContainer">
             <a href="index.html"><img src="../assets/nftHouse-logo-2.png" width="200" alt=""></a>
@@ -112,8 +114,9 @@
         <div class="midRow">
             <div class="text-[#8a939b] text-xl w-max-1/4 flex-wrap mt-4 text-center">A brand for the metaverse. Built by the community. We rise together. We build together. We grow together. Ready to take the red bean?</div>
         </div>
-        <div class="flex flex-wrap">
-            <div class="nftWrapper">
+        <div class="flex flex-wrap" id="nftList">
+
+            <!-- <div class="nftWrapper">
                 <a href="nftDetail.html" class="">
                     <div class="imgContainer">
                         <img src="./img/1.png" alt="" class="nftImg">
@@ -138,187 +141,12 @@
                         </div>
                     </div>
                 </a>
-            </div>
-
-            <div class="nftWrapper">
-                <div class="imgContainer">
-                    <img src="./img/2.png" alt="" class="nftImg">
-                </div>
-                <div class="details">
-                    <div class="info">
-                        <div class="flex-0.6 flex-wrap">
-                            <div class="collectionName">title</div>
-                            <div class="assetName">name</div>
-                        </div>
-                        <div class="flex-0.4 text-right">
-                            <div class="priceTag">Price</div>
-                            <div class="priceValue">
-                                <img src="../assets/eth.png" alt="" class="cardEthLogo">0.11
-                            </div>
-                        </div>
-                    </div>
-                    <div class="likes">
-                        <span class="likeIcon">
-                            <i class="far fa-heart"></i>
-                        </span>{''}
-                    </div>
-                </div>
-            </div>
-
-            <div class="nftWrapper">
-                <div class="imgContainer">
-                    <img src="./img/3.png" alt="" class="nftImg">
-                </div>
-                <div class="details">
-                    <div class="info">
-                        <div class="flex-0.6 flex-wrap">
-                            <div class="collectionName">title</div>
-                            <div class="assetName">name</div>
-                        </div>
-                        <div class="flex-0.4 text-right">
-                            <div class="priceTag">Price</div>
-                            <div class="priceValue">
-                                <img src="../assets/eth.png" alt="" class="cardEthLogo">0.11
-                            </div>
-                        </div>
-                    </div>
-                    <div class="likes">
-                        <span class="likeIcon">
-                            <i class="far fa-heart"></i>
-                        </span>{''}
-                    </div>
-                </div>
-            </div>
-
-            <div class="nftWrapper">
-                <div class="imgContainer">
-                    <img src="./img/4.png" alt="" class="nftImg">
-                </div>
-                <div class="details">
-                    <div class="info">
-                        <div class="flex-0.6 flex-wrap">
-                            <div class="collectionName">title</div>
-                            <div class="assetName">name</div>
-                        </div>
-                        <div class="flex-0.4 text-right">
-                            <div class="priceTag">Price</div>
-                            <div class="priceValue">
-                                <img src="../assets/eth.png" alt="" class="cardEthLogo">0.11
-                            </div>
-                        </div>
-                    </div>
-                    <div class="likes">
-                        <span class="likeIcon">
-                            <i class="far fa-heart"></i>
-                        </span>{''}
-                    </div>
-                </div>
-            </div>
-
-            <div class="nftWrapper">
-                <div class="imgContainer">
-                    <img src="./img/5.png" alt="" class="nftImg">
-                </div>
-                <div class="details">
-                    <div class="info">
-                        <div class="flex-0.6 flex-wrap">
-                            <div class="collectionName">title</div>
-                            <div class="assetName">name</div>
-                        </div>
-                        <div class="flex-0.4 text-right">
-                            <div class="priceTag">Price</div>
-                            <div class="priceValue">
-                                <img src="../assets/eth.png" alt="" class="cardEthLogo">0.11
-                            </div>
-                        </div>
-                    </div>
-                    <div class="likes">
-                        <span class="likeIcon">
-                            <i class="far fa-heart"></i>
-                        </span>{''}
-                    </div>
-                </div>
-            </div>
-
-            <div class="nftWrapper">
-                <div class="imgContainer">
-                    <img src="./img/6.png" alt="" class="nftImg">
-                </div>
-                <div class="details">
-                    <div class="info">
-                        <div class="flex-0.6 flex-wrap">
-                            <div class="collectionName">title</div>
-                            <div class="assetName">name</div>
-                        </div>
-                        <div class="flex-0.4 text-right">
-                            <div class="priceTag">Price</div>
-                            <div class="priceValue">
-                                <img src="../assets/eth.png" alt="" class="cardEthLogo">0.11
-                            </div>
-                        </div>
-                    </div>
-                    <div class="likes">
-                        <span class="likeIcon">
-                            <i class="far fa-heart"></i>
-                        </span>{''}
-                    </div>
-                </div>
-            </div>
-
-            <div class="nftWrapper">
-                <div class="imgContainer">
-                    <img src="./img/7.png" alt="" class="nftImg">
-                </div>
-                <div class="details">
-                    <div class="info">
-                        <div class="flex-0.6 flex-wrap">
-                            <div class="collectionName">title</div>
-                            <div class="assetName">name</div>
-                        </div>
-                        <div class="flex-0.4 text-right">
-                            <div class="priceTag">Price</div>
-                            <div class="priceValue">
-                                <img src="../assets/eth.png" alt="" class="cardEthLogo">0.11
-                            </div>
-                        </div>
-                    </div>
-                    <div class="likes">
-                        <span class="likeIcon">
-                            <i class="far fa-heart"></i>
-                        </span>{''}
-                    </div>
-                </div>
-            </div>
-
-            <div class="nftWrapper">
-                <div class="imgContainer">
-                    <img src="./img/8.png" alt="" class="nftImg">
-                </div>
-                <div class="details">
-                    <div class="info">
-                        <div class="flex-0.6 flex-wrap">
-                            <div class="collectionName">title</div>
-                            <div class="assetName">name</div>
-                        </div>
-                        <div class="flex-0.4 text-right">
-                            <div class="priceTag">Price</div>
-                            <div class="priceValue">
-                                <img src="../assets/eth.png" alt="" class="cardEthLogo">0.11
-                            </div>
-                        </div>
-                    </div>
-                    <div class="likes">
-                        <span class="likeIcon">
-                            <i class="far fa-heart"></i>
-                        </span>{''}
-                    </div>
-                </div>
-            </div>
-
-
+            </div> -->
 
         </div>
     </div>
+
+    <script type="module" src="../nft-list/index.js"></script>
     
 </body>
 </html>

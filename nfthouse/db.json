@@ -1,187 +1,249 @@
-
-[
+{
+  "users": [
     {
-        "_id": "61eeed543a4eac3049c8ce6b",
-        "name": "NftHouse",
-        "price": 0.15,
-        "image": "1.jpg",
-        "category": [
-            "art",
-            "collectibles"
-        ]
+      "username": "emer1",
+      "password": "$2b$10$JYa2OJEUxBngLpsUnBQXsOLD8CiO7w3Wd0jK61pdKI4KGHM1OOK0G",
+      "id": 1
     },
     {
-        "_id": "61eeef503a4eac3049c8ce6e",
-        "name": "NftHouse",
-        "price": 0.19,
-        "image": "2.jpg",
-        "category": [
-            "art",
-            "collectibles"
-        ]
+      "username": "emer2",
+      "password": "$2b$10$JYa2OJEUxBngLpsUnBQXsOpLo1GEksXHEi1gnfw1oxGv/PyoYvakm",
+      "id": 2
     },
     {
-        "_id": "61eeef9c3a4eac3049c8ce70",
-        "name": "NftHouse",
-        "price": 1.05,
-        "image": "3.jpg",
-        "category": [
-            "art",
-            "collectibles"
-        ]
-    },
-    {
-        "_id": "61eef0183a4eac3049c8ce73",
-        "name": "NftHouse",
-        "price": 1.8,
-        "image": "4.jpg",
-        "category": [
-            "art",
-            "collectibles"
-        ]
-    },
-    {
-        "_id": "61eef49e63687daa624bab9c",
-        "name": "NftHouse",
-        "price": 2,
-        "image": "an1.png",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef4c963687daa624bab9e",
-        "name": "NftHouse",
-        "price": 2.2,
-        "image": "an2.png",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef4fc63687daa624baba0",
-        "name": "NftHouse",
-        "price": 2.41,
-        "image": "an3.png",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef53b63687daa624baba2",
-        "name": "NftHouse",
-        "price": 2.77,
-        "image": "an4.png",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef5ef63687daa624baba5",
-        "name": "NftHouse",
-        "price": 20.22,
-        "image": "ape1.png",
-        "category": [
-            "collectibles"
-        ]
-    },
-    {
-        "_id": "61eef60e63687daa624baba7",
-        "name": "NftHouse",
-        "price": 35,
-        "image": "ape2.png",
-        "category": [
-            "collectibles"
-        ]
-    },
-    {
-        "_id": "61eef69a63687daa624babaa",
-        "name": "NftHouse",
-        "price": 55,
-        "image": "ape3.png",
-        "category": [
-            "collectibles"
-        ]
-    },
-    {
-        "_id": "61eef6be63687daa624babac",
-        "name": "NftHouse",
-        "price": 71,
-        "image": "ape4.png",
-        "category": [
-            "collectibles"
-        ]
-    },
-    {
-        "_id": "61eef73263687daa624babae",
-        "name": "NftHouse",
-        "price": 27,
-        "image": "art1.png",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef77e63687daa624babb0",
-        "name": "NftHouse",
-        "price": 32,
-        "image": "art2.jpg",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef79b63687daa624babb2",
-        "name": "NftHouse",
-        "price": 35,
-        "image": "art3.png",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef7d263687daa624babb4",
-        "name": "NftHouse",
-        "price": 35.6,
-        "image": "art4.jpg",
-        "category": [
-            "art"
-        ]
-    },
-    {
-        "_id": "61eef87263687daa624babb6",
-        "name": "NftHouse",
-        "price": 0.25,
-        "image": "pic1.jpg",
-        "category": [
-            "photography"
-        ]
-    },
-    {
-        "_id": "61eef8a163687daa624babb8",
-        "name": "NftHouse",
-        "price": 0.35,
-        "image": "pic2.jpg",
-        "category": [
-            "photography"
-        ]
-    },
-    {
-        "_id": "61eef8cc63687daa624babba",
-        "name": "NftHouse",
-        "price": 0.4,
-        "image": "pic3.jpg",
-        "category": [
-            "photography"
-        ]
-    },
-    {
-        "_id": "61eef8fd63687daa624babbc",
-        "name": "NftHouse",
-        "price": 1,
-        "image": "pic4.jpg",
-        "category": [
-            "photography"
-        ]
+      "username": "emer3",
+      "password": "$2b$10$01BLxtg4iDLe6mbvKJjPH.s5h2wkL3xS9o.5ezaoXOQE1P2AELjwu",
+      "id": 3
     }
-]
+  ],
+  "nfts": [
+    {
+      "id": "1",
+      "name": "Azuki",
+      "price": "0.15",
+      "image": "1.png",
+      "categoryId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "detailId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Azuki",
+      "price": "0.19",
+      "image": "2.png",
+      "categoryId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-11T18:39:26.314Z",
+      "detailId": "2"
+    },
+    {
+      "id": "3",
+      "name": "Azuki",
+      "price": "1.05",
+      "image": "3.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-11T19:14:21.296Z"
+    },
+    {
+      "id": "4",
+      "name": "Azuki",
+      "price": "1.8",
+      "image": "4.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-11T19:17:18.159Z"
+    },
+    {
+      "id": "5",
+      "name": "Azuki",
+      "price": "2",
+      "image": "5.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "7",
+      "name": "Azuki",
+      "price": "2.41",
+      "image": "7.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "9",
+      "name": "Azuki",
+      "price": "55",
+      "image": "9.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "11",
+      "name": "Azuki",
+      "price": "27",
+      "image": "11.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "13",
+      "name": "Azuki",
+      "price": "35",
+      "image": "13.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "15",
+      "name": "Azuki",
+      "price": "0.25",
+      "image": "15.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "17",
+      "name": "Azuki",
+      "price": "0.4",
+      "image": "17.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "19",
+      "name": "Azuki",
+      "price": "3",
+      "image": "19.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T11:42:07.693Z"
+    },
+    {
+      "id": "6",
+      "name": "Azuki",
+      "price": "2.2",
+      "image": "6.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "8",
+      "name": "Azuki",
+      "price": "2.77",
+      "image": "8.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "10",
+      "name": "Azuki",
+      "price": "35",
+      "image": "10.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "12",
+      "name": "Azuki",
+      "price": "71",
+      "image": "12.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "14",
+      "name": "Azuki",
+      "price": "32",
+      "image": "14.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "16",
+      "name": "Azuki",
+      "price": "35.6",
+      "image": "16.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "18",
+      "name": "Azuki",
+      "price": "0.35",
+      "image": "18.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "20",
+      "name": "Azuki",
+      "price": "1",
+      "image": "20.png",
+      "categoryId": "2",
+      "detailId": "2",
+      "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "collectibles",
+      "userId": 1,
+      "updatedAt": "2022-02-11T18:31:35.337Z"
+    },
+    {
+      "id": "2",
+      "name": "art",
+      "userId": 1,
+      "updatedAt": "2022-02-11T18:33:30.101Z"
+    }
+  ],
+  "details": [
+    {
+      "id": "1",
+      "name": "buy",
+      "userId": 1,
+      "updatedAt": "2022-02-11T19:06:29.009Z"
+    },
+    {
+      "id": "2",
+      "name": "sale",
+      "userId": 1,
+      "updatedAt": "2022-02-11T19:07:02.682Z"
+    }
+  ]
+}
