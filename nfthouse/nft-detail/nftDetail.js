@@ -1,8 +1,8 @@
-import { NftDetailController } from "../nftDetail/NftDetailController.js";
+import { NftDetailController } from "../nft-Detail/NftDetailController.js";
 import { NotificationController } from "../shared/notification/NotificationController.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const nftDetailElement = document.querySelector(".nftWrapper");
+  const nftDetailElement = document.querySelector("#nftDetail");
 
   const notificationElement = document.querySelector(".notification");
 

@@ -1,7 +1,7 @@
 import { pubSub } from "../shared/pubSub.js";
 import { signupService } from "../signup/SignupService.js";
-import NftService from "../nftList/NftService.js";
-import { buildNftDetailView } from "../nftList/TweetView.js";
+import NftService from "../nft-List/NftService.js";
+import { buildNftDetailView } from "../nft-list/NftView.js";
 import { decodeToken } from "../utils/decodeToken.js";
 
 export class NftDetailController {
@@ -55,7 +55,7 @@ export class NftDetailController {
 
   drawDeleteButton() {
     const buttonElement = document.createElement("button");
-    buttonElement.textContent = "Borrar Tweet";
+    buttonElement.textContent = "Borrar Nft";
 
     this.nftDetailElement.appendChild(buttonElement);
 

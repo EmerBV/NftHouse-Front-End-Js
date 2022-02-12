@@ -96,7 +96,7 @@ export default {
   },
   oldGetNfts() {
     const url =
-      "https://gist.githubusercontent.com/edu-aguilar/8c9a509ec582d04da0640be2b0ede8d5/raw/f75c68645821f3c33d82d9c2c048215584d1d332/nfts.json";
+      "../db.json";
     const badUrl =
       "https://hds.hel.fi/static/assets/placeholders/image/image-m@3x.png";
 
