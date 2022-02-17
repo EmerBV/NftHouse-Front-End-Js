@@ -4,10 +4,11 @@ class CreateNftService {
   constructor() {
   }
 
-  async createNft(image, name, category, price, detail) {
+  async createNft(image, name, category, price, detail, id, username) {
     const url = `http://localhost:8000/api/nfts`;
+    const nft = this.getNftObj(image, name, category, price, detail, id, username);
+
     let response;
-    const nft = this.getNftObj(image, name, category, price, detail);
 
     try {
       response = await fetch(url, {
@@ -19,21 +20,23 @@ class CreateNftService {
         },
       });
     } catch (error) {
-      throw new Error("No he podido guardar el Nft"); 
+      throw new Error("Could not save the Nft"); 
     }
 
     if (!response.ok) {
-        throw new Error("Error mientras se guardaba el Nft"); 
+        throw new Error("Error while saving Nft"); 
     }
   }
 
-  getNftObj(image, name, category, price, detail) {
+  getNftObj(image, name, category, price, detail, id, username) {
     const nftObj = {
       image,
       name,
       category,
       price,
       detail,
+      id,
+      username
     };
     return nftObj;
   }

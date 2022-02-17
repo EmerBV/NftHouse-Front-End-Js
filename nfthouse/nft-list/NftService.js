@@ -11,17 +11,17 @@ export default {
     try {
       response = await fetch(url);
     } catch (error) {
-      throw new Error("No he podido ir a por los Nfts");
+      throw new Error("I couldn't go for the Nfts");
     }
 
     if (!response.ok) {
-      throw new Error("Nfts no encontrados");
+      throw new Error("Nfts not found");
     }
 
     try {
       nfts = await response.json();
     } catch (error) {
-      throw new Error("No he podido transformar la respuesta a json");
+      throw new Error("Error transforming response to json");
     }
 
     const transformedNfts = this.transformNfts(nfts);
@@ -37,17 +37,17 @@ export default {
     try {
       response = await fetch(url);
     } catch (error) {
-      throw new Error("No he podido ir a por el nft");
+      throw new Error("I couldn't go for the Nft");
     }
 
     if (!response.ok) {
-      throw new Error("Nft no encontrado");
+      throw new Error("Nft not found");
     }
 
     try {
       nft = await response.json();
     } catch (error) {
-      throw new Error("No he podido transformar la respuesta a json");
+      throw new Error("Error transforming response to json");
     }
 
     const transformedNft = this.transformNfts([nft]);
@@ -67,11 +67,11 @@ export default {
         },
       });
     } catch (error) {
-      throw new Error("No he podido borrar el nft");
+      throw new Error("I have not been able to delete the Nft");
     }
 
     if (!response.ok) {
-      throw new Error("Nft no encontrado");
+      throw new Error("Nft not found");
     }
   },
   transformNfts(nfts) {
@@ -89,7 +89,8 @@ export default {
         
         image:
           nft.image ||
-          "https://lh3.googleusercontent.com/bP80vVhqvbQLUywOP-bGkh5mCsRWjzE7QNwjFgE4Bduxb5uhf0Q3dYdP7H3I_9LwcqBswUv4EKz5KJQPk317mLmzGazl64GFNFK6=w199",
+          "../img/dummy.png"
+          /* "https://lh3.googleusercontent.com/bP80vVhqvbQLUywOP-bGkh5mCsRWjzE7QNwjFgE4Bduxb5uhf0Q3dYdP7H3I_9LwcqBswUv4EKz5KJQPk317mLmzGazl64GFNFK6=w199" */,
       };
 
       return transformedNft;
@@ -103,7 +104,7 @@ export default {
       fetch(url)
         .catch((error) => {
           console.log(error);
-          reject("No he podido ir a por los Nfts");
+          reject("I couldn't go for the Nfts");
         })
         .then((responseHttp) => {
           console.log(responseHttp);
@@ -111,7 +112,7 @@ export default {
         })
         .catch((error) => {
           console.log(error);
-          reject("No he podido transformar la respuesta a json");
+          reject("Error transforming response to json");
         })
         .then((data) => {
           resolve(data);

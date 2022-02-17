@@ -61,7 +61,7 @@ export function buildNftDetailView(nft) {
     <div class="detailsContainer">
       <div class="generalWrapper">
         <div class="generalInfoContainer">
-          <div class="accent">Team ${nft.name}</div>
+          <div class="accent">Team ${nft.username}</div>
           <div class="generalNftTitle">${nft.name} # ${nft.id}</div>
           <div class="otherInfo">
           <div class="ownedBy">
@@ -158,6 +158,6 @@ export function buildNftListSpinnerView() {
 
 export function buildNotFoundNftsView() {
   return `
-    <h1>Ooops!!! no hay ningún nft!!! =(</h1>
+    <h1 class="text-white">Ooops!!! there is no Nft!!! =(</h1>
   `;
 }

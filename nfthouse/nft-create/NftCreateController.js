@@ -49,16 +49,18 @@ export class NftCreateController {
       const category = formData.get("category");
       const price = formData.get("price");
       const detail = formData.get("detail");
+      const id = formData.get("id");
+      const username = formData.get("username");
 
-      this.addNft(image, name, category, price, detail);
+      this.addNft(image, name, category, price, detail, id, username);
     });
   }
 
-  async addNft(image, name, category, price, detail) {
+  async addNft(image, name, category, price, detail, id, username) {
 
     try {
-      await createNftService.createNft(image, name, category, price, detail);
-      window.location.href = "/";
+      await createNftService.createNft(image, name, category, price, detail, id, username);
+      window.location.href = "../public/collections.html";
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, error);
     }
@@ -69,7 +71,7 @@ export class NftCreateController {
 
     if (!loggedUserToken) {
 
-      pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, "Debe hacer login para crear usuarios");
+      pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, "You must login to create Nfts");
       this.drawBackButton();
     } else{
       const inputElements = Array.from(
@@ -89,12 +91,14 @@ export class NftCreateController {
 
   drawBackButton() {
     const buttonElement = document.createElement("button");
-    buttonElement.textContent = "volver";
+    buttonElement.innerHTML = `
+    <button class="border border-[#282b2f] bg-[#2081e2] p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-white w-[250px] type="submit">Back</button>
+    `;
 
     this.createFormElement.appendChild(buttonElement);
 
     this.createFormElement.addEventListener("click", () => {
-      window.location.href = "/index.html";
+      window.location.href = "../public/collections.html";
     });
   }
 }
