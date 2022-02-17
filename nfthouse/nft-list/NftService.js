@@ -3,8 +3,7 @@ import { signupService } from "../signup/SignupService.js";
 export default {
   async getNfts() {
     const url = "http://localhost:8000/api/nfts";
-    const badUrl =
-      "https://hds.hel.fi/static/assets/placeholders/image/image-m@3x.png";
+    const badUrl = "https://hds.hel.fi/static/assets/placeholders/image/image-m@3x.png";
 
     let response;
     let nfts;
@@ -12,7 +11,7 @@ export default {
     try {
       response = await fetch(url);
     } catch (error) {
-      throw new Error("No he podido ir a por los nfts");
+      throw new Error("No he podido ir a por los Nfts");
     }
 
     if (!response.ok) {
@@ -72,7 +71,7 @@ export default {
     }
 
     if (!response.ok) {
-      throw new Error("Tweet no encontrado");
+      throw new Error("Nft no encontrado");
     }
   },
   transformNfts(nfts) {
@@ -80,11 +79,13 @@ export default {
       const transformedNft = {
         id: nft.id || 0,
         name: nft.name || nft.body, // actualizable
-        price: nft.price || nft.value ,
+        price: nft.price || nft.value,
         category: nft.categoryId || 0,
-        detail: nft.detailId || 0,
+        detail: nft.detail || nft.detailId,
         userId: nft.userId || nft.handle,
+        likes: nft.likes || 0,
         date: nft.updatedAt || nft.date,
+        username: nft.username || nft.handle,
         
         image:
           nft.image ||
@@ -95,16 +96,14 @@ export default {
     });
   },
   oldGetNfts() {
-    const url =
-      "../db.json";
-    const badUrl =
-      "https://hds.hel.fi/static/assets/placeholders/image/image-m@3x.png";
+    const url = "../db.json";
+    const badUrl = "https://hds.hel.fi/static/assets/placeholders/image/image-m@3x.png";
 
     return new Promise(function (resolve, reject) {
       fetch(url)
         .catch((error) => {
           console.log(error);
-          reject("No he podido ir a por los nfts");
+          reject("No he podido ir a por los Nfts");
         })
         .then((responseHttp) => {
           console.log(responseHttp);

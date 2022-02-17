@@ -14,7 +14,7 @@ export class NftDetailController {
     if (!nftId) {
       pubSub.publish(
         pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        "Id del nft no válido"
+        "Id del Nft no válido"
       );
 
       return;
@@ -55,7 +55,10 @@ export class NftDetailController {
 
   drawDeleteButton() {
     const buttonElement = document.createElement("button");
-    buttonElement.textContent = "Borrar Nft";
+    /* buttonElement.textContent = "Borrar Nft"; */
+    buttonElement.innerHTML = `
+      <button class="border border-[#282b2f] bg-[#2081e2] p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-black w-[250px] hover:bg-indigo-400 transition ease-in-out duration-150" type="submit">Borrar Nft</button>
+    `;
 
     this.nftDetailElement.appendChild(buttonElement);
 
@@ -65,7 +68,7 @@ export class NftDetailController {
   }
 
   async deleteNft() {
-    const shouldDelete = window.confirm("Estás seguro de borrar el nft?");
+    const shouldDelete = window.confirm("Estás seguro de borrar el Nft?");
 
     if (shouldDelete) {
       try {

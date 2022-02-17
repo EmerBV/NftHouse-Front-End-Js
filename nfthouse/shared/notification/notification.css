@@ -4,7 +4,7 @@
   color: white;
   border-radius: 0.2rem;
   display: flex;
-  position: relative;
+  position: absolute;
 }
 
 .notification p {
@@ -13,6 +13,7 @@
 }
 
 .notification button {
+  background-color: white;
   top: 5px;
   right: 5px;
   position: absolute;

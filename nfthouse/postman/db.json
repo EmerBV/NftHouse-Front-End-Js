@@ -23,9 +23,9 @@
       "price": "0.15",
       "image": "1.png",
       "categoryId": "1",
+      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-11T18:35:32.352Z",
-      "detailId": "1"
+      "updatedAt": "2022-02-11T18:35:32.352Z"
     },
     {
       "id": "2",
@@ -33,9 +33,9 @@
       "price": "0.19",
       "image": "2.png",
       "categoryId": "2",
+      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-11T18:39:26.314Z",
-      "detailId": "2"
+      "updatedAt": "2022-02-11T18:35:32.352Z"
     },
     {
       "id": "3",
@@ -45,7 +45,7 @@
       "categoryId": "1",
       "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-11T19:14:21.296Z"
+      "updatedAt": "2022-02-11T18:35:32.352Z"
     },
     {
       "id": "4",
@@ -55,7 +55,7 @@
       "categoryId": "2",
       "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-11T19:17:18.159Z"
+      "updatedAt": "2022-02-11T18:35:32.352Z"
     },
     {
       "id": "5",
@@ -65,77 +65,7 @@
       "categoryId": "1",
       "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
-    },
-    {
-      "id": "7",
-      "name": "Azuki",
-      "price": "2.41",
-      "image": "7.png",
-      "categoryId": "1",
-      "detailId": "1",
-      "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
-    },
-    {
-      "id": "9",
-      "name": "Azuki",
-      "price": "55",
-      "image": "9.png",
-      "categoryId": "1",
-      "detailId": "1",
-      "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
-    },
-    {
-      "id": "11",
-      "name": "Azuki",
-      "price": "27",
-      "image": "11.png",
-      "categoryId": "1",
-      "detailId": "1",
-      "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
-    },
-    {
-      "id": "13",
-      "name": "Azuki",
-      "price": "35",
-      "image": "13.png",
-      "categoryId": "1",
-      "detailId": "1",
-      "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
-    },
-    {
-      "id": "15",
-      "name": "Azuki",
-      "price": "0.25",
-      "image": "15.png",
-      "categoryId": "1",
-      "detailId": "1",
-      "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
-    },
-    {
-      "id": "17",
-      "name": "Azuki",
-      "price": "0.4",
-      "image": "17.png",
-      "categoryId": "1",
-      "detailId": "1",
-      "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
-    },
-    {
-      "id": "19",
-      "name": "Azuki",
-      "price": "3",
-      "image": "19.png",
-      "categoryId": "1",
-      "detailId": "1",
-      "userId": 1,
-      "updatedAt": "2022-02-12T11:42:07.693Z"
+      "updatedAt": "2022-02-11T18:35:32.352Z"
     },
     {
       "id": "6",
@@ -145,7 +75,17 @@
       "categoryId": "2",
       "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "updatedAt": "2022-02-11T18:35:32.352Z"
+    },
+    {
+      "id": "7",
+      "name": "Azuki",
+      "price": "2.41",
+      "image": "7.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-11T18:35:32.352Z"
     },
     {
       "id": "8",
@@ -155,7 +95,17 @@
       "categoryId": "2",
       "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "updatedAt": "2022-02-11T18:35:32.352Z"
+    },
+    {
+      "id": "9",
+      "name": "Azuki",
+      "price": "55",
+      "image": "9.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-11T18:35:32.352Z"
     },
     {
       "id": "10",
@@ -165,6 +115,16 @@
       "categoryId": "2",
       "detailId": "2",
       "userId": 2,
+      "updatedAt": "2022-02-11T18:35:32.352Z"
+    },
+    {
+      "id": "11",
+      "name": "Azuki",
+      "price": "27",
+      "image": "11.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
       "updatedAt": "2022-02-12T12:12:06.157Z"
     },
     {
@@ -178,6 +138,16 @@
       "updatedAt": "2022-02-12T12:12:06.157Z"
     },
     {
+      "id": "13",
+      "name": "Azuki",
+      "price": "35",
+      "image": "13.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
       "id": "14",
       "name": "Azuki",
       "price": "32",
@@ -185,6 +155,16 @@
       "categoryId": "2",
       "detailId": "2",
       "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "15",
+      "name": "Azuki",
+      "price": "0.25",
+      "image": "15.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
       "updatedAt": "2022-02-12T12:12:06.157Z"
     },
     {
@@ -198,6 +178,16 @@
       "updatedAt": "2022-02-12T12:12:06.157Z"
     },
     {
+      "id": "17",
+      "name": "Azuki",
+      "price": "0.4",
+      "image": "17.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
       "id": "18",
       "name": "Azuki",
       "price": "0.35",
@@ -205,6 +195,16 @@
       "categoryId": "2",
       "detailId": "2",
       "userId": 2,
+      "updatedAt": "2022-02-12T12:12:06.157Z"
+    },
+    {
+      "id": "19",
+      "name": "Azuki",
+      "price": "3",
+      "image": "19.png",
+      "categoryId": "1",
+      "detailId": "1",
+      "userId": 1,
       "updatedAt": "2022-02-12T12:12:06.157Z"
     },
     {

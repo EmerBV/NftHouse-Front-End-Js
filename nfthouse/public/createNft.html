@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/nftHouse.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/da4b7a64f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="wrapper">
+      <div class="logoContainer">
+        <a href="index.html"
+          ><img src="../assets/nftHouse-logo-2.png" width="200" alt=""
+        /></a>
+      </div>
+      <div class="searchBar flex-1">
+        <div class="searchIcon">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <input
+          class="searchInput"
+          placeholder="Search items, collections and accounts"
+        />
+      </div>
+      <ul class="headerItems">
+        <li><a href="collections.html" class="headerItem">Collections</a></li>
+        <li><a href="" class="headerItem">Stats</a></li>
+        <li><a href="" class="headerItem">Resources</a></li>
+        <li><a href="" class="headerItem">Create</a></li>
+        <div class="headerIcon">
+          <a href="myCollections.html"
+            ><i class="far fa-user-circle" title="Account"></i
+          ></a>
+        </div>
+        <div class="headerIcon">
+          <a href="login.html"
+            ><i class="fas fa-wallet" title="Login / Logout"></i
+          ></a>
+        </div>
+      </ul>
+      <div class="flex sm:hidden flex-1 justify-end">
+        <i class="text-white text-2xl fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="notification"></div>
+
+    <div class="h-screen overflow-hidden">
+      <div class="flex items-center justify-center container-lg text-[#e5e8eb] h-full">
+        <div class="detailContainer" id="nftCreate">
+          <div class="items-center text-3xl font-extrabold mb-6">
+              <h3>Create New Item</h3>
+          </div>
+          <div class="detailTopContent py-6 justify-center">
+            <div class="mr-3">
+              <div>
+                <div class="flex items-center">
+                  <label for="image"></label>
+                  <img src="../assets/port_1.png" alt="" class="rounded-lg border-[#151c22] border"/>
+                </div>
+              </div>
+            </div>
+            <div class="detailsContainer">
+              <div class="generalWrapper">
+                <div class="generalInfoContainer">
+                  <div class="mb-1">
+                    <label for="name" class="">Name</label>
+                    <input type="text" class="flex w-full items-center border border-[#151b22] px-3 py-2 rounded-lg bg-[#363840]" placeholder="Item name" required  disabled>
+                  </div>
+                  <div class="mb-1">
+                    <label for="price" class="">Price</label>
+                    <input type="text" class="flex w-full items-center border border-[#151b22] px-3 py-2 rounded-lg bg-[#363840]" placeholder="Item price" required  disabled>
+                  </div>
+                  <div class="mb-1">
+                    <label for="category" class="">Category</label>
+                    <button class="flex w-full items-center border border-[#151b22] rounded-lg bg-[#363840] justify-between" id="category-btn">
+                        <p class="px-3 py-2 bg-[#363840">Select category</p>
+                        <span class="activityTitleIcon pr-2 bg-[#363840">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                    <div class="hidden flex-col w-full border border-[#151b22] rounded-lg bg-[#363840]" id="category-dropdown">
+                        <input type="button" value="Art" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg text-white flex" onclick=""></input>
+                        <input type="button" value="Collectibles" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg text-white flex" onclick=""></input>
+                        <!-- <a href="#" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Art</a>
+                        <a href="#" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Collectibles</a> -->
+                    </div>
+                    <!-- <select name="Category" id="" class="flex w-full items-center border border-[#151b22] rounded-lg bg-[#363840] justify-between px-3 py-2" id="category-btn">
+                        <option value="" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg" selected>Select category</p>
+                        <option value="" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Art</option>
+                        <option value="" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Collectibles</option>
+                    </select> -->
+                  </div>
+                  <div class="mb-1">
+                    <label for="detail" class="">Detail</label>
+                    <button class="flex w-full items-center border border-[#151b22] rounded-lg bg-[#363840] justify-between" id="detail-btn">
+                        <p class="px-3 py-2 bg-[#363840">Select an event</p>
+                        <span class="activityTitleIcon pr-2 bg-[#363840">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                    <div class="hidden flex-col w-full border border-[#151b22] rounded-lg bg-[#363840]" id="detail-dropdown">
+                        <input type="button" value="Sale" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg text-white flex" onclick="sale"></input>
+                        <input type="button" value="Buy" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg text-white flex" onclick="buy"></input>
+                    </div>
+                  </div>
+                  <div class="flex mt-6">
+                      <button type="submit" class="bg-[#2081e2] hover:bg-[#42a0ff] flex items-center py-2 px-12 rounded-lg" disabled>
+                        <i class="fas fa-wallet text-xl"></i>
+                        <div class="ml-2 text-lg font-semibold">Create</div>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="activityWrapper">
+            <div class="activityTitle">
+              <div class="activityTitleLeft">
+                <span class="activityTitleIcon">
+                  <i class="fas fa-sort-alt"></i>
+                </span>
+                Item Activity
+              </div>
+              <div class="activityTitleRight">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="activityTable">
+              <div class="activityFilter">
+                <div class="filterTitle">Filter</div>
+                <div class="activityTitleIcon">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="tableHeader">
+                <div class="tableHeaderElement flex-[3]">Event</div>
+                <div class="tableHeaderElement flex-[3]">Price</div>
+                <div class="tableHeaderElement flex-[3]">From</div>
+                <div class="tableHeaderElement flex-[3]">To</div>
+                <div class="tableHeaderElement flex-[3]">Date</div>
+              </div>
+              <div class="">
+                <div class="eventItem">
+                  <div class="event flex-[3]">
+                    <div class="eventIcon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="eventName">Sale</div>
+                  </div>
+                  <div class="eventPrice flex-[3]">
+                    <img
+                      src="../assets/eth.png"
+                      alt="eth"
+                      class="eventEthLogo"
+                    />
+                    <div class="eventPriceValue">${nft.price}</div>
+                  </div>
+                  <div class="accent flex-[3]">{event.from}</div>
+                  <div class="accent flex-[3]">{event.to}</div>
+                  <div class="accent flex-[3]">${currentTime}</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const categoryBtn = document.querySelector('#category-btn')
+            const categoryDrop = document.querySelector('#category-dropdown')
+
+            categoryBtn.addEventListener('click', () => {
+                if (categoryDrop.classList.contains('hidden')){
+                    categoryDrop.classList.remove('hidden');
+                    categoryDrop.classList.add('flex');
+                }else{
+                    categoryDrop.classList.remove('flex');
+                    categoryDrop.classList.add('hidden');
+                }
+            })
+        });
+        window.addEventListener('DOMContentLoaded', () => {
+            const detailBtn = document.querySelector('#detail-btn')
+            const detailDrop = document.querySelector('#detail-dropdown')
+
+            detailBtn.addEventListener('click', () => {
+                if (detailDrop.classList.contains('hidden')){
+                    detailDrop.classList.remove('hidden');
+                    detailDrop.classList.add('flex');
+                }else{
+                    detailDrop.classList.remove('flex');
+                    detailDrop.classList.add('hidden');
+                }
+            })
+        })
+    </script>
+
+    <script type="module" src="../nft-create/nftCreate.js"></script>
+  </body>
+</html>

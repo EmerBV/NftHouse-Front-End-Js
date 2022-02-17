@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     notificationElement
   );
 
-  const tweetListController = new NftListController(nftListElement);
-  await tweetListController.showNfts();
+  const nftListController = new NftListController(nftListElement);
+  await nftListController.showNfts();
 });

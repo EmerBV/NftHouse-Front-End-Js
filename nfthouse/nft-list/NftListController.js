@@ -39,9 +39,9 @@ export class NftListController {
       // informar de error
       pubSub.publish(
         pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        "error obteniendo nfts"
+        "Error obteniendo nfts"
       );
-      // this.notificationController.show("error obteniendo nfts");
+      // this.notificationController.show("Error obteniendo nfts");
     } finally {
       const loader = this.nftListElement.querySelector(".loader");
       loader.remove();
@@ -68,7 +68,7 @@ async function oldNftListController(nftListElement) {
       nftListElement.appendChild(nftArticleElement);
     }
   } catch (error) {
-    alert("error obteniendo nfts");
+    alert("Error obteniendo nfts");
   } finally {
     const loader = nftListElement.querySelector(".loader");
     loader.remove();
@@ -77,7 +77,6 @@ async function oldNftListController(nftListElement) {
 }
 
 /* 
-
 misiones de un controlador:
 
 - orquestación o intermediario entre vista y modelo.
