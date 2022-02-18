@@ -5,6 +5,13 @@
 html,
 body {
   background-color: #202225;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
@@ -23,11 +30,6 @@ body {
   @apply mr-3;
 }
 
-/*
-.logoText {
-  @apply ml-[0.8rem] text-white font-semibold text-2xl mx-auto;
-}
-*/
 .searchBar {
   @apply hidden sm:flex bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center;
 }
@@ -45,71 +47,31 @@ body {
 }
 
 .headerItem {
-  @apply text-white px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer;
+  @apply px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer;
 }
 
 .headerIcon {
   @apply text-[#8a939b] text-3xl font-black px-4 hover:text-white cursor-pointer;
 }
-/*
-.mobileMenu {
-  @apply hidden md:flex items-center space-x-1
-}
 
-.mobileItems {
-  @apply hidden py-2 px-4
-}
-*/
 /* HERO */
-/*
-.heroWrapper {
-  @apply relative
-}
-*/
+
 .bgContainer {
   @apply before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://pbs.twimg.com/media/FHo7-W8VcAEnsNh?format=jpg&name=medium')] before:bg-cover before:bg-center before:opacity-30 before:blur;
 }
-/*
-.contentWrapper {
-  @apply flex flex-1 h-screen justify-center items-center md:flex-row mx-4 my-0
-}
-*/
 
 .contentWrapper {
   @apply flex h-screen justify-center items-center lg:flex-row md:flex-row sm:text-center  gap-12 mt-5 lg:mt-5  mb-5;
 }
 
-/*
-.contentWrapper {
-  @apply space-y-10 md:grid md:grid-cols-2 relative
-}
-*/
-
 .copyContainer {
   @apply w-1/2 justify-center md:items-center sm:items-start;
 }
-
-/*
-.copyContainer {
-  @apply flex flex-1 flex-col items-center lg:items-start 
-}
-*/
-
-/*
-.copyContainer {
-  @apply md:flex md:flex-col md:justify-center 
-}
-*/
 
 .title {
   @apply relative text-white text-[46px] font-semibold flex;
 }
 
-/*  
-.description {
-    @apply text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]
-} 
-*/
 .ctaContainer {
   @apply flex;
 }
@@ -133,16 +95,6 @@ body {
 .author {
   @apply flex flex-col justify-center ml-4;
 }
-/*  
-.name {
-    @apply ``
-}
-*/
-/*  
-.infoIcon {
-    @apply flex justify-end items-center flex-1 text-[#8a939b] text-3xl font-bold
-}
-*/
 
 .footerContainer {
   @apply bg-[#04111d] py-[0.2rem] items-center justify-center bottom-0 w-full relative;
@@ -263,11 +215,7 @@ body {
 .info {
   @apply flex justify-between text-[#e4e8eb] drop-shadow-xl;
 }
-/*  
-.infoLeft {
-  @apply flex-0.6 flex-wrap
-} 
-*/
+
 .collectionName {
   @apply font-semibold text-sm text-[#8a939b];
 }
@@ -275,11 +223,7 @@ body {
 .assetName {
   @apply font-bold text-lg mt-2;
 }
-/*  
-.infoRight {
-  @apply flex-0.4 text-right
-} 
-*/
+
 .priceTag {
   @apply font-semibold text-sm text-[#8a939b];
 }
@@ -301,11 +245,7 @@ body {
 }
 
 /* NFT DETAIL */
-/*
-.detailWrapper {
-  @apply flex flex-col items-center container-lg text-[#e5e8eb]
-}
-*/
+
 .detailContainer {
   @apply container p-6;
 }
@@ -417,15 +357,7 @@ body {
 .tableHeader {
   @apply flex w-full bg-[#262b2f] border-y border-[#151b22] mt-8 px-4 py-1
 }
-/*
-.eventItem {
-  @apply flex px-4
-}
 
-.activityEthLogo {
-  @apply h-5 mr-2
-}
-*/
 .eventItem {
   @apply flex px-4 py-5 font-medium
 }

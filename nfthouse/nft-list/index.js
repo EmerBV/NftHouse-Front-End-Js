@@ -3,7 +3,6 @@ import { NftListController } from "./NftListController.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const nftListElement = document.querySelector("#nftList");
-  // nftListController(nftListElement);
 
   const notificationElement = document.querySelector(".notification");
 

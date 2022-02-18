@@ -35,14 +35,11 @@ export class NftDetailController {
     const loggedUserToken = signupService.getLoggedUser();
 
     if (loggedUserToken) {
-      // decodificamos token
-      const userInfo = decodeToken(loggedUserToken);
 
-      // comprobamos si el id de usuario logado es el mismo que el id del creador del nft
+      const userInfo = decodeToken(loggedUserToken);
       const isOwner = this.isNftOwner(userInfo.userId);
       console.log(isOwner);
 
-      // pintamos botón
       if (isOwner) {
         this.drawDeleteButton();
       }
@@ -55,9 +52,8 @@ export class NftDetailController {
 
   drawDeleteButton() {
     const buttonElement = document.createElement("button");
-    /* buttonElement.textContent = "Delete Nft"; */
     buttonElement.innerHTML = `
-      <button class="border border-[#282b2f] bg-[#2081e2] p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-black w-[250px] hover:bg-indigo-400 transition ease-in-out duration-150" type="submit">Delete Nft</button>
+      <button class="border border-[#282b2f] bg-[#2081e2] hover:bg-[#42a0ff] p-[0.3rem] my-4 text-xl font-semibold rounded-lg w-[250px] transition ease-in-out duration-150 cursor-pointer text-white" type="submit">Delete Nft</button>
     `;
 
     this.nftDetailElement.appendChild(buttonElement);
@@ -73,9 +69,9 @@ export class NftDetailController {
     if (shouldDelete) {
       try {
         await NftService.deleteNft(this.nft.id);
-        window.location.href = "../public/collections.html";
+        window.location.href = "../collections.html";
       } catch (error) {
-        // utilizamos pubsub
+
       }
     }
   }

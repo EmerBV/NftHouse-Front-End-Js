@@ -78,7 +78,7 @@ export default {
     return nfts.map((nft) => {
       const transformedNft = {
         id: nft.id || 0,
-        name: nft.name || nft.body, // actualizable
+        name: nft.name || nft.body,
         price: nft.price || nft.value,
         category: nft.categoryId || 0,
         detail: nft.detail || nft.detailId,
@@ -88,9 +88,7 @@ export default {
         username: nft.username || nft.handle,
         
         image:
-          nft.image ||
-          "../img/dummy.png"
-          /* "https://lh3.googleusercontent.com/bP80vVhqvbQLUywOP-bGkh5mCsRWjzE7QNwjFgE4Bduxb5uhf0Q3dYdP7H3I_9LwcqBswUv4EKz5KJQPk317mLmzGazl64GFNFK6=w199" */,
+          nft.image || "../img/dummy.png",
       };
 
       return transformedNft;
@@ -121,10 +119,3 @@ export default {
   },
 };
 
-/*
-
-responsabilidad del modelo:
-
-- abstraer al controlador y a la vista de la procedencia de los datos.
-
-*/

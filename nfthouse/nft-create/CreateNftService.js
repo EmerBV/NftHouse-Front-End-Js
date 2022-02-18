@@ -1,9 +1,7 @@
 import { signupService } from "../signup/SignupService.js";
 
 class CreateNftService {
-  constructor() {
-  }
-
+  
   async createNft(image, name, category, price, detail, id, username) {
     const url = `http://localhost:8000/api/nfts`;
     const nft = this.getNftObj(image, name, category, price, detail, id, username);

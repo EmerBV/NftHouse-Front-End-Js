@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create NFTs | NftHouse</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/nftHouse.png"/>
+
+  <link rel="stylesheet" href="./public/css/main.css" />
+  <link rel="stylesheet" href="./shared/spinner/spinner.css"/>
+  <link rel="stylesheet" href="./shared/notification/notification.css" />
+
+  <script src="https://kit.fontawesome.com/da4b7a64f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="wrapper">
+
+    <div class="logoContainer">
+      <a href="index.html"><img src="./assets/nftHouse-logo-2.png" width="200" alt=""/></a>
+    </div>
+    <div class="searchBar flex-1">
+      <div class="searchIcon">
+        <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+      <input
+        class="searchInput"
+        placeholder="Search items, collections and accounts"
+      />
+    </div>
+    <ul class="headerItems">
+      <li><a href="collections.html" class="headerItem">Collections</a></li>
+      <li><a href="createNft.html" class="headerItem">Create</a></li>
+      <div class="headerIcon">
+          <a href="login.html"><i class="far fa-user-circle" title="Login / Logout"></i></a>
+      </div>
+    </ul>
+    <div class="flex sm:hidden flex-1 justify-end">
+      <i class="text-white text-2xl fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <div class="notification"></div>
+
+  <div class="h-screen overflow-hidden">
+    <div class="flex items-center justify-center container-lg text-[#e5e8eb] h-full">
+      <form class="detailContainer">
+        <div class="items-center text-3xl font-extrabold mb-6">
+            <h3>Create New Item</h3>
+        </div>
+        <div class="detailTopContent py-6 justify-center" id="nftCreate">
+          <div class="mr-3">
+            <div>
+              <div class="flex items-center">
+                <label for="image"></label>
+                <input type="image" name="image" src="./assets/port_1.png" alt="dummyImg" class="rounded-lg border-[#151c22] border" width="345" disabled/>
+              </div>
+            </div>
+          </div>
+          <div class="detailsContainer">
+            <div class="generalWrapper">
+              <div class="generalInfoContainer">
+
+                <div class="mb-1">
+                  <label for="username" class="">Created by</label>
+                  <input type="text" name="username" class="flex w-full items-center border border-[#151b22] px-3 py-2 rounded-lg bg-[#363840]" placeholder="Username" required  disabled>
+                </div>
+
+                <div class="mb-1">
+                  <label for="name" class="">Name</label>
+                  <input type="text" name="name" class="flex w-full items-center border border-[#151b22] px-3 py-2 rounded-lg bg-[#363840]" placeholder="Item name" required  disabled>
+                </div>
+
+                <div class="mb-1">
+                  <label for="price" class="">Price</label>
+                  <input type="text" name="price" class="flex w-full items-center border border-[#151b22] px-3 py-2 rounded-lg bg-[#363840]" placeholder="Item price" required  disabled>
+                </div>
+
+                <div class="mb-1">
+                  <label for="category" class="">Category</label>
+                  <select name="category" id="" class="flex w-full items-center border border-[#151b22] rounded-lg bg-[#363840] justify-between px-3 py-2">
+                    <option value="" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Select category</option>
+                    <option value="art" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Art</option>
+                    <option value="collectibles" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Collectibles</option>
+                  </select>
+                </div>
+
+                <div class="mb-1">
+                  <label for="detail" class="">Detail</label>
+                  <select name="detail" id="" class="flex w-full items-center border border-[#151b22] rounded-lg bg-[#363840] justify-between px-3 py-2">
+                    <option value="" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Select an event</option>
+                    <option value="buy" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Buy</option>
+                    <option value="sale" class="px-3 py-2 hover:bg-[#8a939b] rounded-lg">Sale</option>
+                  </select>
+                </div>
+                
+                <div class="flex mt-5">
+                    <button type="submit" class="border border-[#282b2f] bg-[#2081e2] hover:bg-[#42a0ff] transition ease-in-out duration-150 flex items-center py-2 px-12 text-xl font-semibold rounded-lg cursor-pointer text-white" disabled>
+                      <i class="fas fa-wallet text-xl"></i>
+                      <div class="ml-2 text-lg font-semibold">Create</div>
+                    </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./nft-create/nftCreate.js"></script>
+</body>
+</html>

@@ -57,7 +57,7 @@ export class SignupController {
       if (!arePasswordsEqual) {
         pubSub.publish(
           pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-          "las contraseñas no son iguales"
+          "Passwords are not the same"
         );
         return;
       }
@@ -67,7 +67,7 @@ export class SignupController {
       if (!isPasswordValid) {
         pubSub.publish(
           pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-          "La contraseña debe contener sólo números o letras"
+          "The password must contain only numbers or letters"
         );
         return;
       }
@@ -105,12 +105,3 @@ export class SignupController {
   }
 }
 
-/**
- * El campo usuario es obligatorio
- * las contraseñas son obligatorias
- * El boton debe habilitarse cuando los campos obligatorios estén rellenos
- * las contraseñas deben ser iguales
- * contraseña con minimo 5 caracteres
- * hacer que la contraseña se vea.
- * submit debe crear un usuario con esos datos
- */

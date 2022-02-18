@@ -53,7 +53,7 @@ export class LoginController {
   async loginUser(username, password) {
     try {
       await signupService.loginUser(username, password);
-      window.location.href = "../public/index.html";
+      window.location.href = "../index.html";
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, error);
     }

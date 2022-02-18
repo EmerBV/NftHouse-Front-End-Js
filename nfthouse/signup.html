@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | NftHouse</title>
+    <title>Sign Up | NftHouse</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/nftHouse.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/nftHouse.png" />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css">
 
     <script src="https://kit.fontawesome.com/da4b7a64f8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="notification hidden relative"></section>
+    
     <nav class="wrapper">
         <div class="logoContainer">
-            <a href="index.html"><img src="../assets/nftHouse-logo-2.png" width="200" alt=""></a>
+            <a href="index.html"><img src="./assets/nftHouse-logo-2.png" width="200" alt=""></a>
         </div>
         <div class="searchBar flex-1">
             <div class="searchIcon">
@@ -27,37 +27,34 @@
         </div>
         <ul class="headerItems">
             <li><a href="collections.html" class="headerItem">Collections</a></li>
-            <li><a href="" class="headerItem">Stats</a></li>
-            <li><a href="" class="headerItem">Resources</a></li>
             <li><a href="createNft.html" class="headerItem">Create</a></li>
             <div class="headerIcon">
-                <a href="myCollections.html"><i class="far fa-user-circle" title="Account"></i></a>
-            </div>
-            <div class="headerIcon">
-                <a href="login.html"><i class="fas fa-wallet" title="Login / Logout"></i></a>
+                <a href="login.html"><i class="far fa-user-circle" title="Login / Logout"></i></a>
             </div>
         </ul>
         <div class="flex sm:hidden flex-1 justify-end">
             <i class="text-white text-2xl fas fa-bars"></i>
         </div>
     </nav>
+
+    <section class="notification hidden relative"></section>
    
     <div class="flex justify-center items-center h-screen bg-[#3b3d42] mx-auto p-[20px]">
         <div class="relative block p-[50px] justify-center items-center w-[600px]">
             <div class="block">
-                <h1 class="text-[34px] text-center text-white font-[600] mb-4">Sign In</h1>
+                <h1 class="text-[34px] text-center text-white font-[600] mb-4">Sign Up</h1>
                 <form class="p-[50px] rounded-lg border-[#151c22] border justify-center items-center">
                     <div class="mb-4 ">
-                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="text" name="user" placeholder="User name" required>
+                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="text" name="textInput" id="textInput" placeholder="Username" required>
+                    </div>
+                    <div class="mb-4">
+                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="password" name="passwordInput" id="passwordInput" placeholder="Password" required>
                     </div>
                     <div class="mb-2">
-                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="password" name="password" placeholder="Password" required>
+                        <input class="h-[2rem] w-full border-0 rounded-md px-3 outline-0 ring-0" type="password" name="passwordMatchInput" id="passwordMatchInput" placeholder="Repeat the password" required>
                     </div>
                     <div class="flex justify-center items-center">
-                        <button class="border border-[#282b2f] bg-[#2081e2] p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-black w-[250px]" type="submit" disabled>LOGIN</button>
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <p class="text-white">Don't have an <a class="hover:text-[#2081e2]" href="signup.html">account</a> yet?</p>
+                        <button class="border border-[#282b2f] bg-[#2081e2] hover:bg-[#42a0ff] transition ease-in-out duration-150 p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-white w-[250px]" type="submit" disabled>CONFIRM</button>
                     </div>
                 </form>
             </div>
@@ -89,7 +86,7 @@
         <p class="copyright">NftHouse <span>&copy;</span> 2022.</p>
     </footer>
 
-    <script type="module" src="../login/login.js"></script>
+    <script type="module" src="./signup/signup.js"></script>
     
 </body>
 </html>

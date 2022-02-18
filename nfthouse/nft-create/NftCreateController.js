@@ -60,7 +60,7 @@ export class NftCreateController {
 
     try {
       await createNftService.createNft(image, name, category, price, detail, id, username);
-      window.location.href = "../public/collections.html";
+      window.location.href = "../collections.html";
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.SHOW_ERROR_NOTIFICATION, error);
     }
@@ -77,7 +77,7 @@ export class NftCreateController {
       const inputElements = Array.from(
         this.createFormElement.querySelectorAll("input")
       );
-      // En caso de hacer login se habilitan los inputs
+      
       this.inputsEnabled (inputElements);
     }     
     
@@ -92,13 +92,13 @@ export class NftCreateController {
   drawBackButton() {
     const buttonElement = document.createElement("button");
     buttonElement.innerHTML = `
-    <button class="border border-[#282b2f] bg-[#2081e2] p-[0.3rem] my-4 text-xl font-semibold rounded-lg cursor-pointer text-white w-[250px] type="submit">Back</button>
+    <button class="border border-[#282b2f] bg-[#2081e2] hover:bg-[#42a0ff] flex items-center py-2 px-12 text-xl font-semibold rounded-lg cursor-pointer text-white type="submit">Back</button>
     `;
 
     this.createFormElement.appendChild(buttonElement);
 
     this.createFormElement.addEventListener("click", () => {
-      window.location.href = "../public/collections.html";
+      window.location.href = "../collections.html";
     });
   }
 }

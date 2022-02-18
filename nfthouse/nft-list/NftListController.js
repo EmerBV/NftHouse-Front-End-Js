@@ -36,16 +36,15 @@ export class NftListController {
         this.nftListElement.appendChild(nftArticleElement);
       }
     } catch (error) {
-      // informar de error
+
       pubSub.publish(
         pubSub.TOPICS.SHOW_ERROR_NOTIFICATION,
-        "Error obteniendo nfts"
+        "Error getting Nfts"
       );
-      // this.notificationController.show("Error obteniendo nfts");
+
     } finally {
       const loader = this.nftListElement.querySelector(".loader");
       loader.remove();
-      // loader.classList.add("hidden");
     }
   }
 }
@@ -68,22 +67,11 @@ async function oldNftListController(nftListElement) {
       nftListElement.appendChild(nftArticleElement);
     }
   } catch (error) {
-    alert("Error obteniendo nfts");
+    alert("Error getting Nfts");
   } finally {
     const loader = nftListElement.querySelector(".loader");
     loader.remove();
-    // loader.classList.add("hidden");
+  
   }
 }
 
-/* 
-misiones de un controlador:
-
-- orquestación o intermediario entre vista y modelo.
-- definir y manejar eventos
-- validar datos
-- gestinar errores
-- desacoplamiento entre capas(vista y modelo)
-- un controlador debe ocuparse de gestionar un nodo DOM
-  en cuanto a datos que debe pintar y eventos que suceden
-*/

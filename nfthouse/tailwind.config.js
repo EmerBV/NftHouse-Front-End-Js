@@ -1,8 +1,7 @@
 module.exports = {
   content: [
-    './public/**/*.{html,js}',
+    '*.{html,js}',
   ],
-  darkMode: false,
   theme: {
     extend: {},
     container: {
