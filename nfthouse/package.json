@@ -5,18 +5,24 @@
   "main": "index.js",
   "scripts": {
     "build:css": "postcss ./src/globals.css -o ./public/css/main.css",
-    "build": "NODE_ENV=production postcss ./src/globals.css -o ./public/css/main.css"
+    "build": "NODE_ENV=production postcss ./src/globals.css -o ./public/css/main.css",
+    "lint": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
+    "eslint": "^8.9.0",
     "postcss": "^8.4.6",
+    "standard": "^16.0.4",
     "tailwindcss": "^3.0.18"
   },
   "dependencies": {
     "postcss-cli": "^9.1.0",
     "win-node-env": "^0.6.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }

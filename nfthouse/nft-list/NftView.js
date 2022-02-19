@@ -1,8 +1,8 @@
 export function buildNftView(nft) {
  
-  const nftDetailView = buildNftDetailView(nft);
+    const nftDetailView = buildNftDetailView(nft)
 
-  let nftTemplate = `
+    let nftTemplate = `
 
   <div class="nftWrapper">
     <a href="nftDetail.html?id=${nft.id}" class="">
@@ -31,16 +31,16 @@ export function buildNftView(nft) {
     </a>
   </div>
 
-  `;
+  `
 
-  return nftTemplate;
+    return nftTemplate
 
 }
 
 export function buildNftDetailView(nft) {
-  const currentTime = new Date(nft.date).toLocaleString();
+    const currentTime = new Date(nft.date).toLocaleString()
 
-  let nftTemplate = `
+    let nftTemplate = `
   
   <div class="">
     <div class="detailTopContent">
@@ -140,25 +140,25 @@ export function buildNftDetailView(nft) {
     </div>
   </div>
   
-  `;
+  `
 
-  return nftTemplate;
+    return nftTemplate
 
 }
 
 export function buildNftListSpinnerView() {
-  return `
+    return `
   <div class="loader">
     <div></div>
     <div></div>
     <div></div>
     <div></div>
   </div>
-  `;
+  `
 }
 
 export function buildNotFoundNftsView() {
-  return `
+    return `
     <h1 class="text-white">Ooops!!! there is no Nft!!! =(</h1>
-  `;
+  `
 }

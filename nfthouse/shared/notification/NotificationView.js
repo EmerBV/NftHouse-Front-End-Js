@@ -1,8 +1,8 @@
 export function buildNotificationView(message) {
-  return `
+    return `
   <p>${message}</p>
   <button>❌</button>
-  `;
+  `
 }
 
 
