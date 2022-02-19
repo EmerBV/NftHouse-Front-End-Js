@@ -446,8 +446,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .left-0 {
   left: 0px;
 }
-.top-\[-400px\] {
-  top: -400px;
+.top-\[72px\] {
+  top: 72px;
+}
+.z-\[110\] {
+  z-index: 110;
 }
 .m-0 {
   margin: 0px;
@@ -552,14 +555,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .items-center {
   align-items: center;
 }
-.justify-end {
-  justify-content: flex-end;
-}
 .justify-center {
   justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
   overflow: hidden;
@@ -599,6 +604,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(40 43 47 / var(--tw-border-opacity));
 }
+.bg-\[\#04111d\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 17 29 / var(--tw-bg-opacity));
+}
 .bg-\[\#363840\] {
   --tw-bg-opacity: 1;
   background-color: rgb(54 56 64 / var(--tw-bg-opacity));
@@ -607,13 +616,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(32 129 226 / var(--tw-bg-opacity));
 }
-.bg-\[\#04111d\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(4 17 29 / var(--tw-bg-opacity));
-}
 .bg-\[\#3b3d42\] {
   --tw-bg-opacity: 1;
   background-color: rgb(59 61 66 / var(--tw-bg-opacity));
+}
+.p-0 {
+  padding: 0px;
 }
 .p-\[20px\] {
   padding: 20px;
@@ -624,10 +632,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-\[0\.3rem\] {
   padding: 0.3rem;
 }
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -636,22 +640,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .pl-1 {
   padding-left: 0.25rem;
 }
 .pr-1 {
   padding-right: 0.25rem;
-}
-.pl-7 {
-  padding-left: 1.75rem;
 }
 .text-center {
   text-align: center;
@@ -704,9 +705,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(24 104 183 / var(--tw-text-opacity));
 }
-.opacity-0 {
-  opacity: 0;
-}
 .outline-0 {
   outline-width: 0px;
 }
@@ -722,22 +720,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
 .duration-150 {
   transition-duration: 150ms;
 }
-.duration-500 {
-  transition-duration: 500ms;
-}
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 html,
@@ -765,11 +752,9 @@ a {
   position: sticky;
   top: 0px;
   z-index: 110;
-  display: flex;
   height: 72px;
   max-width: 100%;
   align-items: center;
-  justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(4 17 29 / var(--tw-bg-opacity));
   padding-left: 1.2rem;
@@ -788,7 +773,6 @@ a {
 }
 
 .searchBar {
-  display: none;
   align-items: center;
   border-radius: 0.8rem;
   --tw-bg-opacity: 1;
@@ -799,13 +783,6 @@ a {
 .searchBar:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(76 80 92 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 640px) {
-
-  .searchBar {
-    display: flex;
-  }
 }
 
 .searchIcon {
@@ -850,22 +827,12 @@ a {
 }
 
 .headerItems {
-  display: none;
   align-items: center;
   justify-content: flex-end;
 }
 
-@media (min-width: 640px) {
-
-  .headerItems {
-    display: flex;
-  }
-}
-
 .headerItem {
   cursor: pointer;
-  padding-left: 1rem;
-  padding-right: 1rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(200 202 205 / var(--tw-text-opacity));
@@ -876,10 +843,24 @@ a {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+
+  .headerItem {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .headerItem {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .headerIcon {
   cursor: pointer;
-  padding-left: 1rem;
-  padding-right: 1rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 900;
@@ -890,6 +871,22 @@ a {
 .headerIcon:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+
+  .headerIcon {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .headerIcon {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* HERO */
@@ -1658,20 +1655,12 @@ a {
 
 @media (min-width: 640px) {
 
-  .sm\:hidden {
-    display: none;
+  .sm\:block {
+    display: block;
   }
 }
 
 @media (min-width: 768px) {
-
-  .md\:static {
-    position: static;
-  }
-
-  .md\:z-auto {
-    z-index: auto;
-  }
 
   .md\:flex {
     display: flex;
@@ -1680,30 +1669,17 @@ a {
   .md\:hidden {
     display: none;
   }
-
-  .md\:w-auto {
-    width: auto;
-  }
-
-  .md\:items-center {
-    align-items: center;
-  }
-
-  .md\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .md\:pl-0 {
-    padding-left: 0px;
-  }
-
-  .md\:opacity-100 {
-    opacity: 1;
-  }
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
 
   .lg\:text-left {
     text-align: left;

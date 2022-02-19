@@ -23,7 +23,7 @@ a {
 /* NAVBAR */
 
 .wrapper {
-  @apply max-w-full bg-[#04111d] px-[1.2rem] py-[0.2rem] flex justify-between items-center h-[72px] sticky top-0 z-[110] transition-[top] duration-[0.5s] ease-[0s];
+  @apply max-w-full bg-[#04111d] px-[1.2rem] py-[0.2rem] items-center h-[72px] sticky top-0 z-[110] transition-[top] duration-[0.5s] ease-[0s];
 }
 
 .logoContainer {
@@ -31,7 +31,7 @@ a {
 }
 
 .searchBar {
-  @apply hidden sm:flex bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center;
+  @apply bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] items-center  text-center;
 }
 
 .searchIcon {
@@ -43,15 +43,15 @@ a {
 }
 
 .headerItems {
-  @apply hidden sm:flex justify-end items-center;
+  @apply justify-end items-center;
 }
 
 .headerItem {
-  @apply px-4 font-bold text-[#c8cacd] hover:text-white cursor-pointer;
+  @apply lg:px-4 md:px-3 font-bold text-[#c8cacd] hover:text-white cursor-pointer;
 }
 
 .headerIcon {
-  @apply text-[#8a939b] text-3xl font-black px-4 hover:text-white cursor-pointer;
+  @apply text-[#8a939b] text-3xl font-black lg:px-4 md:px-3 hover:text-white cursor-pointer;
 }
 
 /* HERO */

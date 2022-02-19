@@ -17,26 +17,43 @@
 
     <div class="max-w-full max-h-full m-0 block justify-center items-center">
         
-        <nav class="wrapper md:flex">
+        <nav class="wrapper flex md:flex justify-between">
             <div class="logoContainer">
                 <a href="index.html"><img src="./assets/nftHouse-logo-2.png" width="200" alt=""></a>
             </div>
-            <div class="searchBar flex-1">
+            <div class="searchBar hidden lg:flex md:flex flex-1">
                 <div class="searchIcon">
                     <a href="#"><i class="fas fa-search"></i></a>
                 </div>
                 <input class=searchInput placeholder="Search items, collections and accounts">
             </div>
-            <ul class="headerItems">
+            <ul class="headerItems hidden lg:flex md:flex">
                 <li><a href="collections.html" class="headerItem">Collections</a></li>
                 <li><a href="createNft.html" class="headerItem">Create</a></li>
                 <div class="headerIcon">
                     <a href="login.html"><i class="far fa-user-circle" title="Login / Logout"></i></a>
                 </div>
             </ul>
-            <div class="flex sm:hidden flex-1 justify-end">
-                <i class="text-white text-2xl fas fa-bars"></i>
+
+            <div class="hidden space-y-4 bg-[#04111d] px-3 py-2 left-0 top-[72px] z-[110] w-full absolute mobile-menu">
+                <div class="searchBar lg:hidden md:hidden flex flex-1">
+                    <div class="searchIcon">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <input class=searchInput placeholder="Search items, collections and accounts">
+                </div>
+                <ul class="lg:hidden md:hidden sm:block p-0">
+                    <li><a href="collections.html" class="headerItem p-0">Collections</a></li>
+                    <li><a href="createNft.html" class="headerItem p-0">Create</a></li>
+                    <div class="headerIcon p-0">
+                        <a href="login.html"><i class="far fa-user-circle" title="Login / Logout"></i></a>
+                    </div>
+                </ul>
             </div>
+
+            <button class="lg:hidden md:hidden flex mobile-menu-button">
+                <i class="text-white text-2xl fas fa-bars"></i>
+            </button>
         </nav>
         
         <section class="relative container justify-center items-center max-w-full my-2">
@@ -97,7 +114,7 @@
 
         <script>
             const btn = document.querySelector('button.mobile-menu-button');
-            const menu = document.querySelector('.mobileItems');
+            const menu = document.querySelector('.mobile-menu');
 
             btn.addEventListener('click', () => {
                 menu.classList.toggle("hidden");

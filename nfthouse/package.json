@@ -9,7 +9,7 @@
     "lint": "eslint . --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Emerson Balahan",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
