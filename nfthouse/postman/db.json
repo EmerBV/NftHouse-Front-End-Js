@@ -22,228 +22,250 @@
       "name": "Azuki",
       "price": "0.15",
       "image": "1.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 982,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "2",
       "name": "Azuki",
       "price": "0.19",
       "image": "2.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 143,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "3",
       "name": "Azuki",
       "price": "1.05",
       "image": "3.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 392,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "4",
       "name": "Azuki",
       "price": "1.8",
       "image": "4.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 467,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "5",
       "name": "Azuki",
       "price": "2",
       "image": "5.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 19,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "6",
       "name": "Azuki",
       "price": "2.2",
       "image": "6.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 239,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "7",
       "name": "Azuki",
       "price": "2.41",
       "image": "7.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 155,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "8",
       "name": "Azuki",
       "price": "2.77",
       "image": "8.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 218,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "9",
       "name": "Azuki",
       "price": "55",
       "image": "9.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 284,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "10",
       "name": "Azuki",
       "price": "35",
       "image": "10.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-11T18:35:32.352Z"
+      "likes": 514,
+      "updatedAt": "2022-02-11T18:35:32.352Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "11",
       "name": "Azuki",
       "price": "27",
       "image": "11.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 273,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "12",
       "name": "Azuki",
       "price": "71",
       "image": "12.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 597,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "13",
       "name": "Azuki",
       "price": "35",
       "image": "13.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 350,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "14",
       "name": "Azuki",
       "price": "32",
       "image": "14.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 87,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "15",
       "name": "Azuki",
       "price": "0.25",
       "image": "15.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 321,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "16",
       "name": "Azuki",
       "price": "35.6",
       "image": "16.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 68,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "17",
       "name": "Azuki",
       "price": "0.4",
       "image": "17.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 26,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "18",
       "name": "Azuki",
       "price": "0.35",
       "image": "18.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 105,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     },
     {
       "id": "19",
       "name": "Azuki",
       "price": "3",
       "image": "19.png",
-      "categoryId": "1",
-      "detailId": "1",
       "userId": 1,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 361,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "art",
+      "username": "emer1",
+      "detail": "sale"
     },
     {
       "id": "20",
       "name": "Azuki",
       "price": "1",
       "image": "20.png",
-      "categoryId": "2",
-      "detailId": "2",
       "userId": 2,
-      "updatedAt": "2022-02-12T12:12:06.157Z"
+      "likes": 287,
+      "updatedAt": "2022-02-12T12:12:06.157Z",
+      "category": "collectibles",
+      "username": "emer2",
+      "detail": "buy"
     }
   ],
   "categories": [
     {
       "id": "1",
-      "name": "collectibles",
-      "userId": 1,
-      "updatedAt": "2022-02-11T18:31:35.337Z"
+      "name": "collectibles"
     },
     {
       "id": "2",
-      "name": "art",
-      "userId": 1,
-      "updatedAt": "2022-02-11T18:33:30.101Z"
-    }
-  ],
-  "details": [
-    {
-      "id": "1",
-      "name": "buy",
-      "userId": 1,
-      "updatedAt": "2022-02-11T19:06:29.009Z"
-    },
-    {
-      "id": "2",
-      "name": "sale",
-      "userId": 1,
-      "updatedAt": "2022-02-11T19:07:02.682Z"
+      "name": "art"
     }
   ]
 }
