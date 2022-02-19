@@ -437,8 +437,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1124px;
   }
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
+}
+.left-0 {
+  left: 0px;
+}
+.top-\[-400px\] {
+  top: -400px;
 }
 .m-0 {
   margin: 0px;
@@ -598,6 +607,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(32 129 226 / var(--tw-bg-opacity));
 }
+.bg-\[\#04111d\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 17 29 / var(--tw-bg-opacity));
+}
 .bg-\[\#3b3d42\] {
   --tw-bg-opacity: 1;
   background-color: rgb(59 61 66 / var(--tw-bg-opacity));
@@ -627,11 +640,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 3rem;
   padding-right: 3rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .pl-1 {
   padding-left: 0.25rem;
 }
 .pr-1 {
   padding-right: 0.25rem;
+}
+.pl-7 {
+  padding-left: 1.75rem;
 }
 .text-center {
   text-align: center;
@@ -684,6 +704,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(24 104 183 / var(--tw-text-opacity));
 }
+.opacity-0 {
+  opacity: 0;
+}
 .outline-0 {
   outline-width: 0px;
 }
@@ -699,11 +722,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-150 {
   transition-duration: 150ms;
 }
+.duration-500 {
+  transition-duration: 500ms;
+}
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 html,
@@ -1626,6 +1660,46 @@ a {
 
   .sm\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:static {
+    position: static;
+  }
+
+  .md\:z-auto {
+    z-index: auto;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
   }
 }
 
